@@ -1,2 +1,5 @@
-# poker-evaluator
-Poker hand evaluator built in TypeScript and Angular2
+## angular2-seed
+
+A simple starter project demonstrating the basic concepts of Angular2.
+
+Work in progress!

@@ -12,7 +12,8 @@
   },
   "contributors": [
     "Rob Wormald <robwormald@gmail.com>",
-    "PatrickJS <github@gdi2290.com>"
+    "PatrickJS <github@gdi2290.com>",
+    "Bryan Green <mail@bryangreen.me>"
   ],
   "license": "MIT",
   "devDependencies": {
@@ -45,7 +46,9 @@
     "Angular2",
     "angular2-seed",
     "official angular 2 seed",
-    "official angular2 seed"
+    "official angular2 seed",
+    "poker",
+    "poker hand"
   ],
   "repository": {
     "type": "git",

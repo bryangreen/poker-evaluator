@@ -4,7 +4,7 @@ import {Card} from "../card";
 import {RankEvaluator} from "./rankEvaluator";
 import {WinningHand} from "./winningHand";
 import {SuitEvaluator} from "./suitEvaluator";
-import {CardBoundaries} from "./cardBoundaries";
+import {CardSorter} from "./cardBoundaries";
 
 /**
  * Created by Bryan Green on 8/12/2016.
@@ -75,8 +75,8 @@ export class Evaluator {
 
 //    let sameSuit = this.same(hand, HandReducer.bySuit);
 
-    let boundaries = new CardBoundaries();
-    let highestCard = boundaries.highestCard(hand);
+    let boundaries = new CardSorter();
+    let highestCard = boundaries.highestCard(hand.getCards());
     console.log(`Highest card = '${highestCard.rank.name}'`);
 
     // if (sameSuit.length == 5) {

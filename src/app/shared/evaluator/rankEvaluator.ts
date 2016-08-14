@@ -2,12 +2,11 @@ import _ = require("lodash");
 import forEach = require("core-js/fn/array/for-each");
 import {Card} from "../card";
 import {Hand} from "../hand";
-import {HandEvaluator} from "./handEvaluator";
 import {HandRanking, Evaluator, StandardHands} from "./evaluator";
 import {HandReducer} from "./handReducer";
 import {WinningHand} from "./winningHand";
 
-export class RankEvaluator{
+export class RankEvaluator {
 
   constructor(public evaluator: Evaluator, public hand: Hand) {
 

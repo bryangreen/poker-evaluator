@@ -27,10 +27,13 @@ export class Home {
   }
 
   deal() {
-    let hand = this.dealer.deal();
-    console.log(hand.toString());
-    this.hand = hand;
+    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Ten), Card.getSuitByIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Jack), Card.getSuitByIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Queen), Card.getSuitByIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.King), Card.getSuitByIndex(StandardSuits.Heart)));
+    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Nine), Card.getSuitByIndex(StandardSuits.Club)));
   }
+
 
   evaluate() {
 
@@ -40,20 +43,12 @@ export class Home {
   }
 
   dealEvaluate() {
-    this.dealer.addCard(new Card(Card.ranks.find(rank =>(rank.index == StandardRanks.Ace)),
-      Card.suits.find(suit =>(suit.index == StandardSuits.Club))));
-    this.dealer.addCard(new Card(Card.ranks.find(rank =>(rank.index == StandardRanks.Ten)),
-      Card.suits.find(suit =>(suit.index == StandardSuits.Club))));
-    this.dealer.addCard(new Card(Card.ranks.find(rank =>(rank.index == StandardRanks.King)),
-      Card.suits.find(suit =>(suit.index == StandardSuits.Club))));
-    this.dealer.addCard(new Card(Card.ranks.find(rank =>(rank.index == StandardRanks.Queen)),
-      Card.suits.find(suit =>(suit.index == StandardSuits.Club))));
-    this.dealer.addCard(new Card(Card.ranks.find(rank =>(rank.index == StandardRanks.Jack)),
-      Card.suits.find(suit =>(suit.index == StandardSuits.Club))));
-    // this.dealer.addCard(new Card(Card.ranks.find(rank =>(rank.index == StandardRanks.Nine)),
-    //   Card.suits.find(suit =>(suit.index == StandardSuits.Club))));
     console.clear();
-    this.deal();
+
+    let hand = this.dealer.deal();
+    console.log(hand.toString());
+    this.hand = hand;
+
     this.evaluate();
   }
 

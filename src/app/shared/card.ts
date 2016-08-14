@@ -73,5 +73,13 @@ export class Card {
     return `${this.rank.name} of ${this.suit.name}s`;
   }
 
+  static getRankByIndex(index: number): RankInterface {
+    return Card.ranks.find(rank =>(rank.index == index));
+  }
+
+  static getSuitByIndex(index: number): SuitInterface {
+    return Card.suits.find(suit =>(suit.index == index));
+  }
+
 }
 

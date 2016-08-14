@@ -1,7 +1,7 @@
 {
-  "name": "angular2-seed",
+  "name": "poker-evaluator",
   "version": "1.0.0",
-  "description": "A simple starter Angular2 project",
+  "description": "A simple poker hand evaluator",
   "scripts": {
     "typings-install": "typings install",
     "postinstall": "npm run typings-install",
@@ -11,9 +11,9 @@
     "start": "npm run server"
   },
   "contributors": [
+    "Bryan Green <mail@bryangreen.me>",
     "Rob Wormald <robwormald@gmail.com>",
-    "PatrickJS <github@gdi2290.com>",
-    "Bryan Green <mail@bryangreen.me>"
+    "PatrickJS <github@gdi2290.com>"
   ],
   "license": "MIT",
   "devDependencies": {
@@ -44,19 +44,15 @@
     "lodash": "^4.0.0"
   },
   "keywords": [
-    "Angular2",
-    "angular2-seed",
-    "official angular 2 seed",
-    "official angular2 seed",
     "poker",
     "poker hand"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angular/angular2-seed.git"
+    "url": "git+https://github.com/bryangreen/poker-evaluator.git"
   },
   "bugs": {
-    "url": "https://github.com/angular/angular2-seed/issues"
+    "url": "https://github.com/bryangreen/poker-evaluator/issues"
   },
-  "homepage": "https://github.com/angular/angular2-seed#readme"
+  "homepage": "https://github.com/bryangreen/poker-evaluator#readme"
 }

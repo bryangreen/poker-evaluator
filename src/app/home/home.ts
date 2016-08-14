@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {Dealer} from "../shared/dealer";
 import {Hand} from "../shared/hand";
 import {Evaluator} from "../shared/evaluator/evaluator";
-import {Card} from "../shared/card";
+import {Card, StandardRanks, StandardSuits} from "../shared/card";
 import {Deck} from "../shared/deck";
 
 @Component({
@@ -28,7 +28,7 @@ export class Home {
 
   deal() {
     let hand = this.dealer.deal();
-    console.log(hand);
+    console.log(hand.toString());
     this.hand = hand;
   }
 
@@ -40,10 +40,18 @@ export class Home {
   }
 
   dealEvaluate() {
-    // this.dealer.addCard(new Card(Deck.ranks.Ace.toString(), "Club));
-    // this.dealer.addCard(new Card(Deck.ranks.Ace.toString(), Deck.suits.Diamond.toString()));
-    // this.dealer.addCard(new Card(Deck.ranks.Ace.toString(), Deck.suits.Spade.toString()));
-    // this.dealer.addCard(new Card(Deck.ranks.Ace.toString(), Deck.suits.Heart.toString()));
+    this.dealer.addCard(new Card(Card.ranks.find(rank =>(rank.index == StandardRanks.Ace)),
+      Card.suits.find(suit =>(suit.index == StandardSuits.Club))));
+    this.dealer.addCard(new Card(Card.ranks.find(rank =>(rank.index == StandardRanks.Ten)),
+      Card.suits.find(suit =>(suit.index == StandardSuits.Club))));
+    this.dealer.addCard(new Card(Card.ranks.find(rank =>(rank.index == StandardRanks.King)),
+      Card.suits.find(suit =>(suit.index == StandardSuits.Club))));
+    this.dealer.addCard(new Card(Card.ranks.find(rank =>(rank.index == StandardRanks.Queen)),
+      Card.suits.find(suit =>(suit.index == StandardSuits.Club))));
+    this.dealer.addCard(new Card(Card.ranks.find(rank =>(rank.index == StandardRanks.Jack)),
+      Card.suits.find(suit =>(suit.index == StandardSuits.Club))));
+    // this.dealer.addCard(new Card(Card.ranks.find(rank =>(rank.index == StandardRanks.Nine)),
+    //   Card.suits.find(suit =>(suit.index == StandardSuits.Club))));
     console.clear();
     this.deal();
     this.evaluate();

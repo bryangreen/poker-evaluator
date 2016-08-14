@@ -6,10 +6,10 @@ import {Hand} from "../hand";
  */
 
 
-export interface HandEvaluator {
-
-  constructor(public evaluator: Evaluator, public hand: Hand);
-
-  evaluate(evaluator: Evaluator, hand: Hand): WinningHand;
-
-}
+// export interface HandEvaluator {
+//
+//   constructor(public evaluator: Evaluator, public hand: Hand);
+//
+//   evaluate(evaluator: Evaluator, hand: Hand): WinningHand;
+//
+// }

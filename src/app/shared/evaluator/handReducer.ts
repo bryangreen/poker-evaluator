@@ -19,12 +19,12 @@ export class HandReducer {
   }
 
   static byRank(result: Array<Array<Card>>, card: Card): Array<Array<Card>> {
-    (result[card.rank.index] || (result[card.rank.index] = new Array<Card>())).push(card);
+    (result[card.rank.index] || (result[card.rank.index] = Array<Card>())).push(card);
     return result;
   }
 
   static bySuit(result: Array<Array<Card>>, card: Card): Array<Array<Card>> {
-    (result[card.suit.index] || (result[card.suit.index] = new Array<Card>())).push(card);
+    (result[card.suit.index] || (result[card.suit.index] = Array<Card>())).push(card);
     return result;
   }
 

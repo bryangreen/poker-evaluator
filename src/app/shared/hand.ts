@@ -1,7 +1,3 @@
-/**
- * Created by Bryan Green on 8/12/2016.
- */
-
 import {Injectable} from '@angular/core';
 import {Card} from "./card";
 
@@ -22,6 +18,13 @@ export class Hand {
 
   getCards(): Array<Card> {
     return this.cards;
+  }
+
+  toString(): string {
+    return this.cards.reduce((result: Array<string>, card: Card): Array<string>=> {
+      result.push(card.toString());
+      return result;
+    }, Array<string>()).join(', ');
   }
 
 }

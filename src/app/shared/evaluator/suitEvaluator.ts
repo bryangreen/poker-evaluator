@@ -1,9 +1,10 @@
 import {Card, StandardRanks} from "../card";
-import {CardBoundaries} from "./cardBoundaries";
+import {CardSorter} from "./cardBoundaries";
 import {Hand} from "../hand";
 import {HandRanking, Evaluator, StandardHands} from "./evaluator";
 import {HandReducer} from "./handReducer";
 import {WinningHand} from "./winningHand";
+import {SequenceEvaluator} from "./sequenceEvaluator";
 
 export class SuitEvaluator {
 
@@ -19,8 +20,13 @@ export class SuitEvaluator {
     if (result.length > 0) {
       // The hand has all cards with the same suit.
 
+      let sequenceEvaluator = new SequenceEvaluator(this.evaluator, this.hand),
+        sequence: boolean = sequenceEvaluator.isSequence();
+
+      console.log(`Cards in sequence = ${sequence}`);
+
       if (sequence) {
-        let cardBoundaries: CardBoundaries = new CardBoundaries(),
+        let cardBoundaries: CardSorter = new CardSorter(),
           highestCard: Card = cardBoundaries.highestCard(result[0]);
 
         if (highestCard.rank.index == StandardRanks.Ace) {

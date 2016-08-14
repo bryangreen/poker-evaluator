@@ -2,9 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eac92f7e-f261-4ece-a3b7-2e9f924aea09" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/Todo.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/card.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/dealer.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/deck.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/cardBoundaries.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/evaluator.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/handEvaluator.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/handReducer.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/rankEvaluator.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/sequenceEvaluator.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/suitEvaluator.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/winningHand.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/hand.ts" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/github/repo-browser/repo-browser.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/github/repo-browser/repo-browser.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/github/repo-browser/repo-browser.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/github/repo-detail/repo-detail.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/github/repo-detail/repo-detail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/github/repo-detail/repo-detail.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/github/repo-list/repo-list.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/github/repo-list/repo-list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/github/repo-list/repo-list.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/github/shared/github.ts" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/favicon.ico" afterPath="$PROJECT_DIR$/src/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/typings.json" afterPath="$PROJECT_DIR$/typings.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.html" afterPath="$PROJECT_DIR$/src/app/app.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.routes.ts" afterPath="$PROJECT_DIR$/src/app/app.routes.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/home.html" afterPath="$PROJECT_DIR$/src/app/home/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/home.ts" afterPath="$PROJECT_DIR$/src/app/home/home.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
     </list>
     <ignored path="poker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,71 +54,55 @@
     <favorites_list name="poker" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.22435898">
+    <splitter split-orientation="horizontal" split-proportion="0.4364621">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="app.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/app.html">
+          <file leaf-file-name="index.d.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/typings/globals/node/index.d.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
-                  <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+                <state relative-caret-position="672">
+                  <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="repo-list.ts" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/github/repo-list/repo-list.ts">
+          <file leaf-file-name="typings.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/typings/globals/node/typings.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-                  <folding>
-                    <element signature="e#0#48#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="repo-detail.ts" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/app/github/repo-detail/repo-detail.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="714">
-                  <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#48#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="repo-detail.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/github/repo-detail/repo-detail.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="168">
+                  <caret line="8" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="repo-detail.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/github/repo-detail/repo-detail.css">
+          <file leaf-file-name="index.d.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/typings/index.d.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="63">
+                  <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="app.ts" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/app.ts">
+          <file leaf-file-name="index.d.ts" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/typings/globals/core-js/index.d.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="294">
-                  <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#40#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="531">
+                  <caret line="924" column="4" selection-start-line="924" selection-start-column="4" selection-end-line="924" selection-end-column="4" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="typings.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/typings/globals/core-js/typings.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="168">
+                  <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -99,38 +111,21 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="typings.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/typings.json">
+          <file leaf-file-name="suitEvaluator.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/suitEvaluator.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="21">
-                  <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-                  <folding />
+                <state relative-caret-position="714">
+                  <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+                  <folding>
+                    <element signature="e#0#44#0" expanded="true" />
+                    <marker date="1471203819984" expanded="true" signature="666:1217" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/README.md">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="84">
-                  <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/package.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1029">
-                  <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="LICENSE" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/LICENSE">
+          <file leaf-file-name="sequenceEvaluator.ts" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/sequenceEvaluator.ts">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
                   <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -139,21 +134,105 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/.gitignore">
+          <file leaf-file-name="evaluator.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/evaluator.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="882">
+                  <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+                  <folding>
+                    <element signature="e#0#28#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="cardBoundaries.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/cardBoundaries.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="966">
+                  <caret line="47" column="15" selection-start-line="47" selection-start-column="15" selection-end-line="47" selection-end-column="15" />
+                  <folding>
+                    <element signature="e#0#29#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="winningHand.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/winningHand.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="147">
+                  <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#0#40#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="hand.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/app/shared/hand.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="252">
+                  <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#49#90#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="dealer.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/app/shared/dealer.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="567">
+                  <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name=".editorconfig" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/.editorconfig">
+          <file leaf-file-name="rankEvaluator.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/rankEvaluator.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="1008">
+                  <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#85#114#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="handEvaluator.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/handEvaluator.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="252">
+                  <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+                  <folding>
+                    <element signature="e#0#42#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="handReducer.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/handReducer.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="168">
+                  <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+                  <folding>
+                    <element signature="e#0#29#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="card.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/app/shared/card.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="189">
+                  <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -163,7 +242,20 @@
       </split-second>
     </splitter>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSON file" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Bryan Green &lt;mail@bryangreen.me&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -173,10 +265,38 @@
         <option value="$PROJECT_DIR$/src/polyfills.browser.ts" />
         <option value="$PROJECT_DIR$/src/vendor.browser.ts" />
         <option value="$PROJECT_DIR$/src/app/app.ts" />
-        <option value="$PROJECT_DIR$/src/app/app.html" />
         <option value="$PROJECT_DIR$/typings.json" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/typings/globals/node/typings.json" />
+        <option value="$PROJECT_DIR$/typings/globals/array-shuffle/typings.json" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/typings/index.d.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.html" />
+        <option value="$PROJECT_DIR$/src/app/app.routes.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/evaluation.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/reducer.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/handReducer.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/evaluator.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/evaluator/similar.ts" />
+        <option value="$PROJECT_DIR$/src/app/home/home.html" />
+        <option value="$PROJECT_DIR$/src/app/shared/evaluator/sameEvaluator.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/dealer.ts" />
+        <option value="$PROJECT_DIR$/src/app/home/home.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/hand.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/evaluator/RankInterface.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/deck.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/evaluator/SuitInterface.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/rankInterface.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/evaluator/winningHand.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/evaluator/handEvaluator.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/evaluator/handReducer.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/evaluator/rankEvaluator.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/card.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/evaluator/highestCard.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/evaluator/evaluator.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/evaluator/cardBoundaries.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/evaluator/suitEvaluator.ts" />
       </list>
     </option>
   </component>
@@ -219,8 +339,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -239,8 +357,192 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="typings" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="typings" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lodash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="typings" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="globals" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="typings" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="globals" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core-js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evaluator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,13 +550,26 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="C:/nodejs/node" />
     <property name="js-jscs-nodeInterpreter" value="C:\nodejs\node.exe" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="editor.config.accepted" value="true" />
     <property name="typescript-compiler-editor-notification" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\teaching\angular2-start\poker\src\app\shared" />
+      <recent name="D:\workspace\teaching\angular2-start\poker\src\app\shared\evaluator" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\teaching\angular2-start\poker\src\app\shared\evaluator" />
+      <recent name="D:\workspace\teaching\angular2-start\poker\src\app\shared" />
+    </key>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -316,36 +631,45 @@
       <workItem from="1470871210899" duration="3682000" />
       <workItem from="1470931587408" duration="6847000" />
       <workItem from="1471016368614" duration="178000" />
+      <workItem from="1471016755331" duration="48086000" />
     </task>
+    <task id="LOCAL-00001" summary="Updates to match poker">
+      <created>1471016776887</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1471016776887</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10707000" />
+    <option name="totallyTimeSpent" value="58793000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3200" y="-346" width="3200" height="2530" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24696486" sideWeight="0.4923567" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25239617" sideWeight="0.5076433" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3152357" sideWeight="0.16787003" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3152357" sideWeight="0.83212996" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.708298" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.115015976" sideWeight="0.48979592" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.49322608" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22747605" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="-3100" y="-246" width="3000" height="2330" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46882898" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32982308" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -359,181 +683,31 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updates to match poker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates to match poker" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/shared/evaluator/rankEvaluator.ts</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/shared/evaluator/rankEvaluator.ts</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/app.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/github/repo-list/repo-list.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/github/repo-detail/repo-detail.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/github/repo-detail/repo-detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/github/repo-detail/repo-detail.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.routes.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.browser.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2#73#0" expanded="true" />
-            <element signature="e#231#285#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/custom-typings.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@angular/core/src/util/decorators.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2737">
-          <caret line="161" column="5" selection-start-line="161" selection-start-column="5" selection-end-line="161" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.browser.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2#73#0" expanded="true" />
-            <element signature="e#231#285#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/polyfills.browser.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vendor.browser.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/favicon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/vendor.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="24579" selection-start-line="0" selection-start-column="24579" selection-end-line="0" selection-end-column="24579" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/vendor.bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="16531" column="17" selection-start-line="16531" selection-start-column="17" selection-end-line="16531" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/polyfills.browser.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vendor.browser.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/favicon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/about/about.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/about/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -545,16 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/github/shared/github.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -586,70 +750,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/custom-typings.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.routes.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/home.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/github/repo-list/repo-list.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -669,23 +774,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/github/repo-detail/repo-detail.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.browser.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#2#73#0" expanded="true" />
-            <element signature="e#231#285#0" expanded="true" />
+            <element signature="e#2#73#0" expanded="false" />
+            <element signature="e#231#285#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -722,19 +817,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1029">
-          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/npm-debug.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -755,6 +841,330 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.editorconfig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/github/repo-detail/repo-detail.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/github/shared/github.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/knuth-shuffle/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typings/globals/core-js/typings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typings/globals/node/typings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/knuth-shuffle/example.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/knuth-shuffle/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typings/globals/node/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typings/globals/array-shuffle/typings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="987">
+          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/custom-typings.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/home/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typings/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <marker date="1471032174417" expanded="true" signature="135:306" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/deck.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
+          <folding>
+            <element signature="e#49#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/suitInterface.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/rankInterface.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/evaluation.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/home/home.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/card.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/hand.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="e#49#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/dealer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typings/globals/core-js/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="924" column="4" selection-start-line="924" selection-start-column="4" selection-end-line="924" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typings/modules/lodash/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="9247" column="4" selection-start-line="9247" selection-start-column="4" selection-end-line="9247" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/handReducer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/typescriptCompiler/external/lib.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="1024" column="4" selection-start-line="1024" selection-start-column="4" selection-end-line="1024" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/evaluator.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/handEvaluator.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/rankEvaluator.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+          <folding>
+            <element signature="e#85#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/winningHand.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/cardBoundaries.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="47" column="15" selection-start-line="47" selection-start-column="15" selection-end-line="47" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/suitEvaluator.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+            <marker date="1471203819984" expanded="true" signature="666:1217" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/sequenceEvaluator.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />

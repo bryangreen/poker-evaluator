@@ -13,7 +13,6 @@ export class SuitEvaluator {
   }
 
   evaluate(): WinningHand {
-    console.log('same by suit...');
     let result: Array<Array<Card>> = HandReducer.same(this.hand, HandReducer.bySuit, 5),
       handRanking: HandRanking;
 
@@ -22,8 +21,6 @@ export class SuitEvaluator {
 
       let sequenceEvaluator = new SequenceEvaluator(this.evaluator, this.hand),
         sequence: boolean = sequenceEvaluator.isSequence();
-
-      console.log(`Cards in sequence = ${sequence}`);
 
       if (sequence) {
         let cardBoundaries: CardSorter = new CardSorter(),

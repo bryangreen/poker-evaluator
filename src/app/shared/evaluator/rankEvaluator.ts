@@ -14,7 +14,6 @@ export class RankEvaluator {
 
   evaluate(): WinningHand {
 
-    console.log('same by rank...');
     let result = HandReducer.same(this.hand, HandReducer.byRank, 2),
       handRanking: HandRanking;
     if (result.length > 0) {

@@ -1,7 +1,5 @@
-import {Injectable} from "@angular/core";
 import {Card} from "./Card";
 
-@Injectable()
 export class Hand {
 
   cards: Array<Card> = [];

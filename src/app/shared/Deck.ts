@@ -1,14 +1,6 @@
-/**
- * Created by Bryan Green on 8/12/2016.
- */
-
-import {Injectable} from "@angular/core";
 import {Card} from "./Card";
 import {shuffle} from "lodash";
-import Map = require("core-js/es6/map");
-import forEach = require("core-js/fn/array/for-each");
 
-@Injectable()
 export class Deck {
 
   totalCards: number = 52;

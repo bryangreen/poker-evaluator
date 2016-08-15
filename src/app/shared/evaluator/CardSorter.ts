@@ -1,9 +1,5 @@
 import {Card} from "../Card";
 
-/**
- * Created by Bryan Green on 8/14/2016.
- */
-
 export class CardSorter {
 
   highestCard(cards: Array<Card>): Card {

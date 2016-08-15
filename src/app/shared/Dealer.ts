@@ -1,17 +1,10 @@
-/**
- * Created by Bryan Green on 8/12/2016.
- */
-
-import {Injectable} from "@angular/core";
 import {Deck} from "./Deck";
 import {Hand} from "./Hand";
 import {Card} from "./Card";
 
-@Injectable()
 export class Dealer {
 
   cardsPerHand: number = 5;
-
   deck: Deck;
 
   constructor() {
@@ -21,13 +14,13 @@ export class Dealer {
   start() {
     this.deck = new Deck();
     this.deck.fresh();
-
   }
 
   deal(): Hand {
     let hand: Hand = new Hand();
 
     if (this.deck.cards.length < this.cardsPerHand) {
+      // Too few cards in deck.
       this.deck.fresh();
     }
 
@@ -38,7 +31,7 @@ export class Dealer {
     return hand;
   }
 
-  addCard(card:Card){
+  addCard(card: Card) {
     this.deck.add(card);
   }
 

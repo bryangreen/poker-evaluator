@@ -1,8 +1,5 @@
 import {Card} from "../Card";
 import {Hand} from "../Hand";
-/**
- * Created by Bryan Green on 8/12/2016.
- */
 
 export class HandReducer {
 

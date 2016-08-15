@@ -2,7 +2,7 @@
  * Created by Bryan Green on 8/12/2016.
  */
 
-import {Injectable} from '@angular/core';
+import {Injectable} from "@angular/core";
 
 interface SuitInterface {
   name: string;

@@ -2,9 +2,9 @@
  * Created by Bryan Green on 8/12/2016.
  */
 
-import {Injectable} from '@angular/core';
-import {Card} from "./card";
-import * as _ from 'lodash';
+import {Injectable} from "@angular/core";
+import {Card} from "./Card";
+import {shuffle} from "lodash";
 import Map = require("core-js/es6/map");
 import forEach = require("core-js/fn/array/for-each");
 
@@ -50,13 +50,9 @@ export class Deck {
   }
 
   private shuffle() {
-    console.log(' === shuffling deck ===');
-
     if (this.cards.length == this.totalCards) {
-      this.cards = _.shuffle(this.cards);
+      this.cards = shuffle(this.cards);
     }
-
-    console.log(_.clone(this.cards));
   }
 
 }

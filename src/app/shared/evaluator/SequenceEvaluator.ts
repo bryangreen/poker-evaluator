@@ -1,17 +1,16 @@
-import {Card} from "../card";
-import {CardSorter} from "./cardBoundaries";
-import {Hand} from "../hand";
-import {Evaluator} from "./evaluator";
+import {Card} from "../Card";
+import {CardSorter} from "./CardSorter";
+import {Hand} from "../Hand";
 
 export class SequenceEvaluator {
 
-  constructor(public evaluator: Evaluator, public hand: Hand) {
+  constructor() {
 
   }
 
-  isSequence(): boolean {
+  isRankInSequence(hand: Hand): boolean {
     let sorter = new CardSorter(),
-      sortedCards = sorter.sortAsc(this.hand.getCards());
+      sortedCards = sorter.sortAsc(hand.getCards());
 
     // Return a result with the ranks in order.
     let orderedRanks = sortedCards.reduce(function (result: Array<number>, card: Card): Array<number> {

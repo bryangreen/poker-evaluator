@@ -2,10 +2,10 @@
  * Created by Bryan Green on 8/12/2016.
  */
 
-import {Injectable} from '@angular/core';
-import {Deck} from "./deck";
-import {Hand} from "./hand";
-import {Card} from "./card";
+import {Injectable} from "@angular/core";
+import {Deck} from "./Deck";
+import {Hand} from "./Hand";
+import {Card} from "./Card";
 
 @Injectable()
 export class Dealer {

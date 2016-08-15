@@ -1,9 +1,3 @@
-/**
- * Created by Bryan Green on 8/12/2016.
- */
-
-import {Injectable} from "@angular/core";
-
 interface SuitInterface {
   name: string;
   code: string;
@@ -41,7 +35,6 @@ export enum StandardSuits {
   Spade
 }
 
-@Injectable()
 export class Card {
 
   static suits: Array<SuitInterface> = [

@@ -2,7 +2,7 @@ import {Card} from "../Card";
 import {CardSorter} from "./CardSorter";
 import {Hand} from "../Hand";
 
-export class SequenceEvaluator {
+export class CardRankSequenceEvaluator {
 
   constructor() {
 

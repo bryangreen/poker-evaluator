@@ -4,7 +4,7 @@ import {CardRankEvaluator} from "./CardRankEvaluator";
 import {WinningHand} from "./WinningHand";
 import {CardSuitEvaluator} from "./CardSuitEvaluator";
 import {CardSorter} from "./CardSorter";
-import {SequenceEvaluator} from "./SequenceEvaluator";
+import {CardRankSequenceEvaluator} from "./CardRankSequenceEvaluator";
 import HandRankings = Rankings.HandRankings;
 export class Evaluator {
 
@@ -24,7 +24,7 @@ export class Evaluator {
 
     // Typescript cannot test an object to see if it is an instanceof an interface.
     if (typeof winningHand != 'object') {
-      let sequence = new SequenceEvaluator(),
+      let sequence = new CardRankSequenceEvaluator(),
         suit: CardSuitEvaluator = new CardSuitEvaluator(),
         isSequence: boolean = sequence.isRankInSequence(hand);
 

@@ -2,30 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eac92f7e-f261-4ece-a3b7-2e9f924aea09" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/Poker hand rankings.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/CardRankEvaluator.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/CardSuitEvaluator.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/Evaluator.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/Rankings.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/WinningHand.ts" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/shared/evaluator/evaluator.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/shared/evaluator/handEvaluator.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/shared/evaluator/rankEvaluator.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/shared/evaluator/suitEvaluator.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/shared/evaluator/winningHand.ts" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/Todo.xlsx" afterPath="$PROJECT_DIR$/docs/Todo.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/home.html" afterPath="$PROJECT_DIR$/src/app/home/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/home.ts" afterPath="$PROJECT_DIR$/src/app/home/home.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/app/shared/card.ts" afterPath="$PROJECT_DIR$/src/app/shared/Card.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/app/shared/dealer.ts" afterPath="$PROJECT_DIR$/src/app/shared/Dealer.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/app/shared/deck.ts" afterPath="$PROJECT_DIR$/src/app/shared/Deck.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/app/shared/evaluator/cardBoundaries.ts" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/CardSorter.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/app/shared/evaluator/handReducer.ts" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/HandReducer.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/app/shared/evaluator/sequenceEvaluator.ts" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/SequenceEvaluator.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/app/shared/hand.ts" afterPath="$PROJECT_DIR$/src/app/shared/Hand.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/Card.ts" afterPath="$PROJECT_DIR$/src/app/shared/Card.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/Dealer.ts" afterPath="$PROJECT_DIR$/src/app/shared/Dealer.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/Deck.ts" afterPath="$PROJECT_DIR$/src/app/shared/Deck.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/Hand.ts" afterPath="$PROJECT_DIR$/src/app/shared/Hand.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/evaluator/CardRankEvaluator.ts" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/CardRankEvaluator.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/evaluator/CardSorter.ts" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/CardSorter.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/evaluator/CardSuitEvaluator.ts" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/CardSuitEvaluator.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/evaluator/Evaluator.ts" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/Evaluator.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/evaluator/HandReducer.ts" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/HandReducer.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/evaluator/Rankings.ts" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/Rankings.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/app/shared/evaluator/SequenceEvaluator.ts" afterPath="$PROJECT_DIR$/src/app/shared/evaluator/CardRankSequenceEvaluator.ts" />
     </list>
     <ignored path="poker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -159,8 +147,8 @@
           <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15435">
-                  <caret line="735" column="38" selection-start-line="735" selection-start-column="38" selection-end-line="735" selection-end-column="38" />
+                <state relative-caret-position="15393">
+                  <caret line="738" column="38" selection-start-line="738" selection-start-column="38" selection-end-line="738" selection-end-column="38" />
                   <folding />
                 </state>
               </provider>
@@ -180,14 +168,12 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="CardSuitEvaluator.ts" pinned="false" current-in-tab="true">
+          <file leaf-file-name="CardSuitEvaluator.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/CardSuitEvaluator.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="504">
-                  <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-                  <folding>
-                    <element signature="e#0#44#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -204,21 +190,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="home.ts" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/home/home.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1071">
-                  <caret line="56" column="70" selection-start-line="56" selection-start-column="70" selection-end-line="56" selection-end-column="70" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="Hand.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/shared/Hand.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="567">
-                  <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+                <state relative-caret-position="63">
+                  <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
@@ -229,10 +205,22 @@
           <file leaf-file-name="Deck.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/shared/Deck.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1071">
-                  <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+                <state relative-caret-position="42">
+                  <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
                   <folding>
-                    <element signature="e#49#90#0" expanded="true" />
+                    <element signature="e#0#28#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Dealer.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/app/shared/Dealer.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="546">
+                  <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+                  <folding>
+                    <element signature="e#0#28#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -241,22 +229,22 @@
           <file leaf-file-name="CardSorter.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/CardSorter.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="21">
+                  <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
                   <folding>
-                    <marker date="1471276604868" expanded="true" signature="448:1142" ph="..." />
-                    <marker date="1471276604868" expanded="true" signature="553:1140" ph="..." />
-                    <marker date="1471276604868" expanded="true" signature="553:1142" ph="..." />
+                    <marker date="1471281027751" expanded="true" signature="399:1093" ph="..." />
+                    <marker date="1471281027751" expanded="true" signature="504:1091" ph="..." />
+                    <marker date="1471281027751" expanded="true" signature="504:1093" ph="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SequenceEvaluator.ts" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/SequenceEvaluator.ts">
+          <file leaf-file-name="CardRankSequenceEvaluator.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/CardRankSequenceEvaluator.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="42">
-                  <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+                <state relative-caret-position="609">
+                  <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#29#0" expanded="true" />
                   </folding>
@@ -267,8 +255,8 @@
           <file leaf-file-name="HandReducer.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/HandReducer.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="42">
+                  <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#29#0" expanded="true" />
                   </folding>
@@ -281,18 +269,16 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="378">
                   <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-                  <folding>
-                    <element signature="e#0#29#0" expanded="true" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Rankings.ts" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Rankings.ts" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/Rankings.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="861">
-                  <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -301,8 +287,8 @@
           <file leaf-file-name="CardRankEvaluator.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/CardRankEvaluator.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+                <state relative-caret-position="840">
+                  <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
                   <folding>
                     <element signature="e#0#29#0" expanded="true" />
                   </folding>
@@ -313,8 +299,8 @@
           <file leaf-file-name="Card.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/shared/Card.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="399">
-                  <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -383,17 +369,22 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/app/shared/evaluator/evaluator.ts" />
         <option value="$PROJECT_DIR$/src/app/shared/evaluator/CardBoundaries.ts" />
-        <option value="$PROJECT_DIR$/src/app/shared/Deck.ts" />
-        <option value="$PROJECT_DIR$/src/app/shared/Hand.ts" />
         <option value="$PROJECT_DIR$/src/app/shared/HandRankings/Evaluator.ts" />
         <option value="$PROJECT_DIR$/src/app/shared/evaluator/HandRankings.ts" />
-        <option value="$PROJECT_DIR$/src/app/shared/evaluator/Rankings.ts" />
         <option value="$PROJECT_DIR$/src/app/shared/evaluator/WinningHand.ts" />
-        <option value="$PROJECT_DIR$/src/app/shared/evaluator/CardRankEvaluator.ts" />
         <option value="$PROJECT_DIR$/src/app/shared/evaluator/SequenceEvaluator.ts" />
         <option value="$PROJECT_DIR$/src/app/shared/evaluator/Evaluator.ts" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/app/shared/evaluator/CardSuitEvaluator.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/Hand.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/Deck.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/Dealer.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/Card.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/evaluator/CardSorter.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/evaluator/CardRankEvaluator.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/evaluator/CardRankSequenceEvaluator.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/evaluator/HandReducer.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/evaluator/Rankings.ts" />
       </list>
     </option>
   </component>
@@ -688,7 +679,7 @@
       <workItem from="1471218327958" duration="1374000" />
       <workItem from="1471274033100" duration="98000" />
       <workItem from="1471274145051" duration="5545000" />
-      <workItem from="1471280354267" duration="447000" />
+      <workItem from="1471280354267" duration="754000" />
     </task>
     <task id="LOCAL-00001" summary="Updates to match poker">
       <created>1471016776887</created>
@@ -718,11 +709,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471218410355</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Refactoring ranking engine.">
+      <created>1471280833625</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1471280833625</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73296000" />
+    <option name="totallyTimeSpent" value="73603000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3200" y="-346" width="3200" height="2530" extended-state="0" />
@@ -766,7 +764,9 @@
     <MESSAGE value="Updates to poker" />
     <MESSAGE value="Improving hand ranking detection" />
     <MESSAGE value="Poker hand evaluators and flow mostly complete." />
-    <option name="LAST_COMMIT_MESSAGE" value="Poker hand evaluators and flow mostly complete." />
+    <MESSAGE value="Refactoring ranking engine." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring ranking engine." />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -783,7 +783,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/app/home/home.ts</url>
-          <line>21</line>
+          <line>20</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
@@ -928,13 +928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/shared/Dealer.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/typings/globals/core-js/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3822">
@@ -968,8 +961,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15435">
-          <caret line="735" column="38" selection-start-line="735" selection-start-column="38" selection-end-line="735" selection-end-column="38" />
+        <state relative-caret-position="15393">
+          <caret line="738" column="38" selection-start-line="738" selection-start-column="38" selection-end-line="738" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -1041,13 +1034,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/home/home.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
-          <caret line="56" column="70" selection-start-line="56" selection-start-column="70" selection-end-line="56" selection-end-column="70" />
+          <caret line="55" column="70" selection-start-line="55" selection-start-column="70" selection-end-line="55" selection-end-column="70" />
           <folding />
         </state>
       </provider>
@@ -1068,84 +1062,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/HandEvaluator.ts" />
-    <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/HandReducer.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/shared/Card.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/shared/Deck.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-          <folding>
-            <element signature="e#49#90#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/shared/Hand.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/CardSorter.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1471276604868" expanded="true" signature="448:1142" ph="..." />
-            <marker date="1471276604868" expanded="true" signature="553:1140" ph="..." />
-            <marker date="1471276604868" expanded="true" signature="553:1142" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/Rankings.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/WinningHand.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/SequenceEvaluator.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
@@ -1170,6 +1086,82 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/Hand.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/Deck.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/Dealer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/Card.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/CardSuitEvaluator.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/CardSorter.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <marker date="1471281027751" expanded="true" signature="399:1093" ph="..." />
+            <marker date="1471281027751" expanded="true" signature="504:1091" ph="..." />
+            <marker date="1471281027751" expanded="true" signature="504:1093" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/WinningHand.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/CardRankSequenceEvaluator.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
@@ -1178,21 +1170,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/CardRankEvaluator.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="840">
+          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/CardSuitEvaluator.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/HandReducer.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        <state relative-caret-position="42">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/evaluator/Rankings.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

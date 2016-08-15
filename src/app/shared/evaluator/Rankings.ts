@@ -1,4 +1,3 @@
-
 module Rankings {
 
   export interface HandRanking {

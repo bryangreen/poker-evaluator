@@ -3,7 +3,7 @@ import {CardSorter} from "./CardSorter";
 import {Hand} from "../Hand";
 import {HandReducer} from "./HandReducer";
 import {WinningHand} from "./WinningHand";
-import {SequenceEvaluator} from "./SequenceEvaluator";
+import {CardRankSequenceEvaluator} from "./CardRankSequenceEvaluator";
 import HandRankings = Rankings.HandRankings;
 import HandRanking = Rankings.HandRanking;
 
@@ -18,7 +18,7 @@ export class CardSuitEvaluator {
 
     if (result.length > 0) {
       // The hand has all cards with the same suit.
-      let sequenceEvaluator = new SequenceEvaluator(),
+      let sequenceEvaluator = new CardRankSequenceEvaluator(),
         isSequence: boolean = sequenceEvaluator.isRankInSequence(hand),
         handRanking: HandRanking;
 

@@ -12,18 +12,25 @@ module.exports = function (config) {
     ],
     exclude: [],
     preprocessors: {
-      'src/test/**/*.ts': ['webpack']
+      'src/**/*.ts': ['webpack'],
+      'src/app/**/*.js': ['coverage']
     },
     webpack: {
       module: webpackConfig.module,
       resolve: webpackConfig.resolve
     },
-    reporters: ['progress'],
+    reporters: ['coverage', 'progress'],
+    coverageReporter: [{
+      type: 'html',
+      dir: 'build/reports/coverage'
+    }, {
+      type: 'text-summary'
+    }],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['PhantomJS'],
+    browsers: ['Chrome'],
     singleRun: false,
     concurrency: Infinity
   })

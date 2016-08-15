@@ -1,5 +1,5 @@
-import {Card} from "../card";
-import {Hand} from "../hand";
+import {Card} from "../Card";
+import {Hand} from "../Hand";
 /**
  * Created by Bryan Green on 8/12/2016.
  */

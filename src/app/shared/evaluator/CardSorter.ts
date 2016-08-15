@@ -1,4 +1,4 @@
-import {Card} from "../card";
+import {Card} from "../Card";
 
 /**
  * Created by Bryan Green on 8/14/2016.

@@ -1,7 +1,8 @@
 # Poker Hand Evaluator
 
 A poker hand evaluator built with [Angular2](https://angular.io/) and
-[TypeScript 1.8](http://www.typescriptlang.org/).
+[TypeScript 1.8](http://www.typescriptlang.org/). Its goal is to
+evaluate any hand and output its poker rank.
 
 
 >_Life, like poker has an element of risk. It shouldn't be avoided. It
@@ -59,4 +60,10 @@ coding guidelines:
 https://basarat.gitbooks.io/typescript/content/docs/styleguide/styleguide.html
 Differences include:
 
+## Next Steps
 
+
+
+## License
+
+MIT © Bryan Green

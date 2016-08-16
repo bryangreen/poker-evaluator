@@ -7,8 +7,8 @@
     "postinstall": "npm run typings-install",
     "build": "webpack --inline --colors --progress --display-error-details --display-cached",
     "watch": "npm run build -- --watch",
-    "server": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src",
-    "server-debug": "webpack-dev-server --colors --progress --display-error-details --display-cached --port 3000  --content-base src",
+    "server": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3001  --content-base src",
+    "server-debug": "webpack-dev-server --colors --progress --display-error-details --display-cached --port 3001  --content-base src",
     "start": "npm run server",
     "test": "karma start",
     "production-build": "set env NODE_ENV=production && webpack -p --progress --colors --display-error-details --display-cached"

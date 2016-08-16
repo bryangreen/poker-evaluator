@@ -56,10 +56,11 @@ https://basarat.gitbooks.io/typescript/content/docs/styleguide/styleguide.html
 Differences include:
 
 ## Next Steps/Lessons
-- I'd consider building this tool from scratch using the
-[angular-cli](https://github.com/angular/angular-cli). This would make
-deployment to GitHub pages easier.
-- Use json files to describe rank, suit, hand rankings. 
+- Consider building this tool from scratch using the
+  [angular-cli](https://github.com/angular/angular-cli). This would at
+  least make deployment to GitHub pages easier along with blueprints for creating components, services, classes, etc.
+- Use json files to describe rank, suit, hand rankings. Here's an
+  example describing the _Royal Flush_ hand ranking:
 ```json
 [{		
 	"name": "Royal Flush",	
@@ -81,7 +82,7 @@ or a command-driven approach:
 {		
 	"name": "Royal Flush",	
 	"rank": 1,	
-	"commands": [{	
+	"requirements": [{	
 		"name": "isSequence",
 		"value": true
 	}, {	

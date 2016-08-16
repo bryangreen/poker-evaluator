@@ -113,7 +113,7 @@ or a command-driven approach:
 - Big thanks to the Angular2 and TypeScript development teams.
 - Hat tip to all the other libraries and developers.
 - [JetBrains WebStorm](https://www.jetbrains.com/webstorm/) - love their tools!
-- Thanks to Byron Knoll for his work on the poker card images.
+- Thanks to [Byron Knoll](http://byronknoll.blogspot.com/) for his work on the poker card images.
 
 
 

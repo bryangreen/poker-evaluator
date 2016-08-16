@@ -1,7 +1,7 @@
 # Poker Hand Evaluator
 
 A poker hand evaluator built with [Angular2](https://angular.io/) and
-[TypeScript 1.8]()http://www.typescriptlang.org/ .
+[TypeScript 1.8](http://www.typescriptlang.org/).
 
 
 >_Life, like poker has an element of risk. It shouldn't be avoided. It
@@ -47,9 +47,9 @@ From the root directory of this application, run the command:
 npm run-script test
 ```
 
-The [Karma](https://karma-runner.github.io/1.0/index.html) test runner is used in conjuction with the
-[Mocha](https://mochajs.org/) test framework and
-[Chai](http://chaijs.com/) Assertion Library.
+The [Karma](https://karma-runner.github.io/1.0/index.html) test runner
+is used in conjuction with the [Mocha](https://mochajs.org/) test
+framework and [Chai](http://chaijs.com/) assertion library.
 
 
 ### Coding guidelines

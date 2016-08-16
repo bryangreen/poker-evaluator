@@ -15,4 +15,8 @@ export class Card {
     return `images/card/${ this.rank.name.toLowerCase() }_of_${this.suit.name.toLowerCase() }s.png`;
   }
 
+  getCardCode() {
+    return `${ this.rank.code.toUpperCase() }${this.suit.name.toLowerCase() }`;
+  }
+
 }

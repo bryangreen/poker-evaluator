@@ -12,14 +12,14 @@
 <ul>
   <li *ngFor="let card of gameService.hand.cards">
     Rank: {{ card.rank.name }}, Suit: {{ card.suit.name }}
-    <img width=50 src="{{ card.getImageFileName() }}">
+    <img width=90 src="{{ card.getImageFileName() }}" alt="{{ card.toString() }}" title="{{ card.toString() }}">
   </li>
 </ul>
 
 
 <p>Current deck is: </p>
 <span *ngFor="let card of gameService.dealer.deck.cards">
-    <img width=50 src="{{ card.getImageFileName() }}" alt="{{ card.toString() }}">
+    <img width=50 src="{{ card.getImageFileName() }}" alt="{{ card.toString() }}" title="{{ card.toString() }}">
  </span>
 
 

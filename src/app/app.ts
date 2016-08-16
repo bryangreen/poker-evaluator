@@ -11,5 +11,4 @@ import {GameService} from "./GameService";
 })
 export class App {
 
-
 }

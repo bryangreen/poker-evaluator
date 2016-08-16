@@ -1,6 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
-
+var copyPlugin = require('copy-webpack-plugin');
 // Webpack Config
 var webpackConfig = {
   entry: {
@@ -11,11 +11,15 @@ var webpackConfig = {
 
   output: {
     path: './dist',
+    "publicPath": "/"
   },
 
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(true),
     new webpack.optimize.CommonsChunkPlugin({name: ['main', 'vendor', 'polyfills'], minChunks: Infinity}),
+    // new copyPlugin([{
+    //   from: 'src/app/images', to: 'images'
+    // }])
   ],
 
   module: {
@@ -24,7 +28,12 @@ var webpackConfig = {
       {test: /\.ts$/, loaders: ['awesome-typescript-loader', 'angular2-template-loader']},
       {test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff"},
       {test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader"},
-      {test: /\.css$/, loaders: ['to-string-loader','css-loader']},
+      {test: /\.css$/, loaders: ['to-string-loader', 'css-loader']},
+      // {
+      //   test: /\.(jpg|png)$/,
+      //   loader: 'url?limit=25000',
+      //   include: '/dist/images/'
+      // },
       {test: /\.html$/, loader: 'raw-loader'}
 
     ]

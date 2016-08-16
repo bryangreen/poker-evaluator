@@ -55,14 +55,53 @@ coding guidelines:
 https://basarat.gitbooks.io/typescript/content/docs/styleguide/styleguide.html
 Differences include:
 
-## Next Steps
+## Next Steps/Lessons
+- I'd consider building this tool from scratch using the
+[angular-cli](https://github.com/angular/angular-cli). This would make
+deployment to GitHub pages easier.
+- Use json files to describe rank, suit, hand rankings. 
+```json
+[{		
+	name: "Royal Flush",	
+	rank: 1,	
+	formula: {	
+		isSequence: true,
+		isSameSuit: true,
+		sameTwoRank: 0,
+		sameThreeRank: 0,
+		sameFourRank: 0,
+		requiredCard: "Ace",
+		tieBreaker: ""
+	}	
+}, …		
 
+```
+or a command-driven approach:
+```json
+{		
+	name: "Royal Flush",	
+	rank: 1,	
+	command: [{	
+		name: "isSequence",
+		value: true
+	}, {	
+		name: "isSameSuit",
+		value: true
+	}, {	
+		name: "requiredCard",
+		value: "Ace"
+	}]	
+}, …		
+
+```
 
 ## References
+### Poker
 - [Rules Of Poker Hand Rankings](http://www.cardplayer.com/rules-of-poker/hand-rankings)
 - [Poker Hands Order](https://www.pokerstars.com/poker/games/rules/hand-rankings/)
 - [List of poker hand categories](https://en.wikipedia.org/wiki/List_of_poker_hand_categories)
-
+### Starting points
+- [Angular2 Seed](https://github.com/angular/angular2-seed)
 
 ## Acknowledgements
 

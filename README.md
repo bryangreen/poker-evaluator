@@ -12,11 +12,6 @@ evaluate any hand and output its poker rank.
 
 
 
-##### Poker Hand References
-- [Rules Of Poker Hand Rankings](http://www.cardplayer.com/rules-of-poker/hand-rankings)
-- [Poker Hands Order](https://www.pokerstars.com/poker/games/rules/hand-rankings/)
-- [List of poker hand categories](https://en.wikipedia.org/wiki/List_of_poker_hand_categories)
-
 ## Build
 
 From the root directory of this app, run the command:
@@ -53,7 +48,7 @@ is used in conjuction with the [Mocha](https://mochajs.org/) test
 framework and [Chai](http://chaijs.com/) assertion library.
 
 
-### Coding guidelines
+## Coding guidelines
 
 The naming and coding conventions of this project mostly adhere to these
 coding guidelines:
@@ -61,6 +56,12 @@ https://basarat.gitbooks.io/typescript/content/docs/styleguide/styleguide.html
 Differences include:
 
 ## Next Steps
+
+
+## References
+- [Rules Of Poker Hand Rankings](http://www.cardplayer.com/rules-of-poker/hand-rankings)
+- [Poker Hands Order](https://www.pokerstars.com/poker/games/rules/hand-rankings/)
+- [List of poker hand categories](https://en.wikipedia.org/wiki/List_of_poker_hand_categories)
 
 
 ## Acknowledgements

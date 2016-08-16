@@ -6,6 +6,6 @@ import {Hand} from "./shared/Hand";
 export class GameService {
 
   dealer: Dealer = new Dealer();
-  hand: Hand;
+  hand: Hand = new Hand();
 
 }

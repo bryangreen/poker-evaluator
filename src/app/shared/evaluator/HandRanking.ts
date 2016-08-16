@@ -23,10 +23,6 @@ export class HandRanking implements HandRankingInterface {
   rank: number;
   index: number;
 
-  // static build(handRankingInterface: HandRankingInterface): HandRanking {
-  //   return HandRanking.build(handRankingInterface.name, handRankingInterface.rank, handRankingInterface.index);
-  // }
-
   static build(rank: {name: string, rank: number, index: number}|HandRankingInterface): HandRanking {
     let handRanking = new HandRanking();
     handRanking.name = rank.name;

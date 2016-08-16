@@ -14,7 +14,6 @@ export class Dealer {
   start() {
     this.deck = new Deck();
     this.deck.fresh();
-
   }
 
   deal(): Hand {
@@ -37,4 +36,3 @@ export class Dealer {
   }
 
 }
-

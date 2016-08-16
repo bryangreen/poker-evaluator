@@ -104,7 +104,8 @@ or a command-driven approach:
 - [Poker Hands Order](https://www.pokerstars.com/poker/games/rules/hand-rankings/)
 - [List of poker hand categories](https://en.wikipedia.org/wiki/List_of_poker_hand_categories)
 - [Poker card images](http://byronknoll.blogspot.com/2011/03/vector-playing-cards.html)
-### Starting points
+
+### Starter project
 - [Angular2 Seed project](https://github.com/angular/angular2-seed)
 
 ## Acknowledgements

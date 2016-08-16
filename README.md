@@ -103,15 +103,16 @@ or a command-driven approach:
 - [Rules Of Poker Hand Rankings](http://www.cardplayer.com/rules-of-poker/hand-rankings)
 - [Poker Hands Order](https://www.pokerstars.com/poker/games/rules/hand-rankings/)
 - [List of poker hand categories](https://en.wikipedia.org/wiki/List_of_poker_hand_categories)
-
+- [Poker card images](http://byronknoll.blogspot.com/2011/03/vector-playing-cards.html)
 ### Starting points
-- [Angular2 Seed](https://github.com/angular/angular2-seed)
+- [Angular2 Seed project](https://github.com/angular/angular2-seed)
 
 ## Acknowledgements
 
 - Big thanks to the Angular2 and TypeScript development teams.
 - Hat tip to all the other libraries and developers.
 - [JetBrains WebStorm](https://www.jetbrains.com/webstorm/) - love their tools!
+- Thanks to Byron Knoll for his work on the poker card images.
 
 
 

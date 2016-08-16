@@ -3,8 +3,12 @@
 A poker hand evaluator built with [Angular2](https://angular.io/) and
 [TypeScript 1.8]()http://www.typescriptlang.org/ .
 
->_Life, like poker has an element of risk. It shouldn't be avoided. It should be faced._ 
->- [Edward Norton](http://www.brainyquote.com/quotes/quotes/e/edwardnort418306.html)
+
+>_Life, like poker has an element of risk. It shouldn't be avoided. It
+>should be faced._
+>
+>-- [Edward Norton](http://www.brainyquote.com/quotes/quotes/e/edwardnort418306.html)
+
 
 
 ##### Poker Hand References

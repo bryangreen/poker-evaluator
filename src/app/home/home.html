@@ -13,7 +13,7 @@
 <ul>
   <li *ngFor="let card of gameService.dealer.deck.cards">
     Rank: {{ card.rank.name }}, Suit: {{ card.suit.name }}
-    <img width=50 src="images/card/{{ card.rank.name | lowercase }}_of_{{ card.suit.name | lowercase }}s.png">
+    <img width=50 src="{{ card.getImageFileName() }}">
   </li>
 </ul>
 

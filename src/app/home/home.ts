@@ -2,7 +2,9 @@ import {Component} from "@angular/core";
 import {Dealer} from "../shared/Dealer";
 import {Hand} from "../shared/Hand";
 import {Evaluator} from "../shared/evaluator/Evaluator";
-import {Card, StandardRanks, StandardSuits} from "../shared/Card";
+import {Card} from "../shared/Card";
+import {Suit, StandardSuits} from "../shared/Suit";
+import {Rank, StandardRanks} from "../shared/Rank";
 
 @Component({
   selector: 'home',
@@ -26,96 +28,95 @@ export class Home {
   }
 
   deal() {
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Ten), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Jack), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Queen), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.King), Card.getSuitByIndex(StandardSuits.Heart)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Nine), Card.getSuitByIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Ten), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Jack), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Queen), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.King), Suit.createFromIndex(StandardSuits.Heart)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Nine), Suit.createFromIndex(StandardSuits.Club)));
   }
 
   royalFlush() {
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Ten), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Jack), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Queen), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.King), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Ace), Card.getSuitByIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Ten), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Jack), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Queen), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.King), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Ace), Suit.createFromIndex(StandardSuits.Club)));
   }
 
   straightFlush() {
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Ten), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Jack), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Queen), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.King), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Nine), Card.getSuitByIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Ten), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Jack), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Queen), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.King), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Nine), Suit.createFromIndex(StandardSuits.Club)));
   }
 
   fourOfAKind() {
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Ten), Card.getSuitByIndex(StandardSuits.Diamond)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Ten), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Ten), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Ten), Card.getSuitByIndex(StandardSuits.Heart)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Nine), Card.getSuitByIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Ten), Suit.createFromIndex(StandardSuits.Diamond)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Ten), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Ten), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Ten), Suit.createFromIndex(StandardSuits.Heart)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Nine), Suit.createFromIndex(StandardSuits.Club)));
   }
 
   fullHouse() {
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Two), Card.getSuitByIndex(StandardSuits.Diamond)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Two), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Two), Card.getSuitByIndex(StandardSuits.Spade)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Queen), Card.getSuitByIndex(StandardSuits.Heart)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Queen), Card.getSuitByIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Two), Suit.createFromIndex(StandardSuits.Diamond)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Two), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Two), Suit.createFromIndex(StandardSuits.Spade)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Queen), Suit.createFromIndex(StandardSuits.Heart)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Queen), Suit.createFromIndex(StandardSuits.Club)));
   }
 
   flush() {
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Four), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Four), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Four), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Four), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Four), Card.getSuitByIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Four), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Four), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Four), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Four), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Four), Suit.createFromIndex(StandardSuits.Club)));
   }
 
   straight() {
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Five), Card.getSuitByIndex(StandardSuits.Spade)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Six), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Seven), Card.getSuitByIndex(StandardSuits.Spade)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Eight), Card.getSuitByIndex(StandardSuits.Heart)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Nine), Card.getSuitByIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Five), Suit.createFromIndex(StandardSuits.Spade)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Six), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Seven), Suit.createFromIndex(StandardSuits.Spade)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Eight), Suit.createFromIndex(StandardSuits.Heart)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Nine), Suit.createFromIndex(StandardSuits.Club)));
   }
 
   threeOfAKind() {
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Eight), Card.getSuitByIndex(StandardSuits.Spade)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Eight), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Eight), Card.getSuitByIndex(StandardSuits.Heart)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Two), Card.getSuitByIndex(StandardSuits.Heart)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Ace), Card.getSuitByIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Eight), Suit.createFromIndex(StandardSuits.Spade)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Eight), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Eight), Suit.createFromIndex(StandardSuits.Heart)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Two), Suit.createFromIndex(StandardSuits.Heart)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Ace), Suit.createFromIndex(StandardSuits.Club)));
   }
 
   twoPair() {
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Jack), Card.getSuitByIndex(StandardSuits.Spade)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Jack), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Four), Card.getSuitByIndex(StandardSuits.Heart)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Four), Card.getSuitByIndex(StandardSuits.Spade)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Ace), Card.getSuitByIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Jack), Suit.createFromIndex(StandardSuits.Spade)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Jack), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Four), Suit.createFromIndex(StandardSuits.Heart)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Four), Suit.createFromIndex(StandardSuits.Spade)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Ace), Suit.createFromIndex(StandardSuits.Club)));
   }
 
   pair() {
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Queen), Card.getSuitByIndex(StandardSuits.Spade)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Queen), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Two), Card.getSuitByIndex(StandardSuits.Heart)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Four), Card.getSuitByIndex(StandardSuits.Spade)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Ace), Card.getSuitByIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Queen), Suit.createFromIndex(StandardSuits.Spade)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Queen), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Two), Suit.createFromIndex(StandardSuits.Heart)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Four), Suit.createFromIndex(StandardSuits.Spade)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Ace), Suit.createFromIndex(StandardSuits.Club)));
   }
 
   highCard() {
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Jack), Card.getSuitByIndex(StandardSuits.Spade)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Four), Card.getSuitByIndex(StandardSuits.Club)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Six), Card.getSuitByIndex(StandardSuits.Heart)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Eight), Card.getSuitByIndex(StandardSuits.Spade)));
-    this.dealer.addCard(new Card(Card.getRankByIndex(StandardRanks.Ace), Card.getSuitByIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Jack), Suit.createFromIndex(StandardSuits.Spade)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Four), Suit.createFromIndex(StandardSuits.Club)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Six), Suit.createFromIndex(StandardSuits.Heart)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Eight), Suit.createFromIndex(StandardSuits.Spade)));
+    this.dealer.addCard(new Card(Rank.createFromIndex(StandardRanks.Ace), Suit.createFromIndex(StandardSuits.Club)));
   }
 
 
   evaluate() {
-
     let evaluator = new Evaluator();
 
     evaluator.evaluate(this.hand);

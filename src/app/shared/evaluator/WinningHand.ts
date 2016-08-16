@@ -1,6 +1,6 @@
 import {Hand} from "../Hand";
 import {Card} from "../Card";
-import HandRanking = Rankings.HandRanking;
+import {HandRanking} from "./HandRanking";
 
 export class WinningHand {
 

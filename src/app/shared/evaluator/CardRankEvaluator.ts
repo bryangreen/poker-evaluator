@@ -2,52 +2,48 @@ import {Card} from "../Card";
 import {Hand} from "../Hand";
 import {HandReducer} from "./HandReducer";
 import {WinningHand} from "./WinningHand";
-import HandRankings = Rankings.HandRankings;
+import {HandRanking, StandardHands} from "./HandRanking";
 
 export class CardRankEvaluator {
 
-  constructor() {
+  constructor(public rankings: HandRanking) {
 
   }
 
-  assess(hand: Hand, rankings: HandRankings): WinningHand {
+  assess(hand: Hand): WinningHand {
     let result = HandReducer.same(hand, HandReducer.byRank, 2);
 
     if (result.length > 0) {
-      let twoPairs = this.countGroupings(result, 2),
-        threePair = this.countGroupings(result, 3),
-        handRanking: Rankings.HandRanking;
-
-      if (twoPairs == 0 && threePair == 0) {
-        // Only evaluate four of a kind if there are no pairs or three of a kinds as the max cards is five.
-        let fourPair = this.countGroupings(result, 4);
-        if (fourPair == 1) {
-          handRanking = rankings.getHandRanking(Rankings.StandardHands.FourOfAKind);
-        }
-      } else {
-        switch (true) {
-          case (twoPairs == 1 && threePair == 0):
-            handRanking = rankings.getHandRanking(Rankings.StandardHands.Pair);
-            break;
-          case (twoPairs == 2 && threePair == 0):
-            handRanking = rankings.getHandRanking(Rankings.StandardHands.TwoPair);
-            break;
-          case (twoPairs == 0 && threePair == 1):
-            handRanking = rankings.getHandRanking(Rankings.StandardHands.ThreeOfAKind);
-            break;
-          case (twoPairs == 1 && threePair == 1):
-            handRanking = rankings.getHandRanking(Rankings.StandardHands.FullHouse);
-            break;
-        }
-      }
+      let twoSameRank = this.countGroupings(result, 2),
+        threeSameRank = this.countGroupings(result, 3),
+        fourSameRank = this.countGroupings(result, 4),
+        handRanking: HandRanking = this.assessPairs(twoSameRank, threeSameRank, fourSameRank);
 
       if (handRanking) {
-        return new WinningHand(hand, handRanking, result);
+        return this.buildWinningHand(hand, handRanking, result);
       }
     }
-
-    return;
   }
+
+  private buildWinningHand(hand: Hand, handRanking: HandRanking, result: Array<Array<Card>>) {
+    return new WinningHand(hand, handRanking, result);
+  }
+
+  private assessPairs(twoCards: number, threeCards: number, fourCards: number): HandRanking {
+    switch (true) {
+      case (twoCards == 1 && threeCards == 0):
+        return this.rankings.getHandRanking(StandardHands.Pair);
+      case (twoCards == 2 && threeCards == 0):
+        return this.rankings.getHandRanking(StandardHands.TwoPair);
+      case (twoCards == 0 && threeCards == 1):
+        return this.rankings.getHandRanking(StandardHands.ThreeOfAKind);
+      case (twoCards == 1 && threeCards == 1):
+        return this.rankings.getHandRanking(StandardHands.FullHouse);
+      case (fourCards == 1):
+        return this.rankings.getHandRanking(StandardHands.FourOfAKind);
+    }
+  }
+
 
   private countGroupings(groupings: Array<Array<Card>>, cardsInGroup: number = 2): number {
     let results = 0;

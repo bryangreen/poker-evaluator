@@ -1,10 +1,11 @@
 import {Card} from "./Card";
 import {shuffle} from "lodash";
+import {Suit} from "./Suit";
+import {Rank} from "./Rank";
 
 export class Deck {
 
   totalCards: number = 52;
-
   cards: Array<Card>;
 
   constructor() {
@@ -31,12 +32,10 @@ export class Deck {
   }
 
   private create() {
-    console.log(Card.suits);
-    console.log(Card.ranks);
-    for (let suite of Card.suits) {
-      for (let rank of Card.ranks) {
-        console.log(suite.toString(), rank.toString());
-        this.cards.push(new Card(rank, suite));
+    for (let suit of Suit.suits) {
+      for (let rank of Rank.ranks) {
+        //console.log(suit.toString(), rank.toString());
+        this.cards.push(new Card(Rank.build(rank), Suit.build(suit)));
       }
     }
   }

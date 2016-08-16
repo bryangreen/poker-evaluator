@@ -50,13 +50,11 @@ framework and [Chai](http://chaijs.com/) assertion library.
 
 ## Coding guidelines
 
-The naming and coding conventions of this project mostly adhere to these
-coding guidelines:
-https://basarat.gitbooks.io/typescript/content/docs/styleguide/styleguide.html
+The naming and coding conventions use the
+[TypeScript StyleGuide and Coding Conventions](https://basarat.gitbooks.io/typescript/content/docs/styleguide/styleguide.html) guide.
 
-Differences include:
+Important distinctions include:
  
-- 2 spaces instead of 4. 
 - Interfaces use the suffix _Interface_.
 
 ## Next steps and lessons learned

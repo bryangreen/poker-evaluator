@@ -81,7 +81,7 @@ or a command-driven approach:
 {		
 	"name": "Royal Flush",	
 	"rank": 1,	
-  "commands": [{	
+	"commands": [{	
 		"name": "isSequence",
 		"value": true
 	}, {	

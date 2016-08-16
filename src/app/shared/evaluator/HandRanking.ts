@@ -1,0 +1,59 @@
+export interface HandRankingInterface {
+  name: string;
+  rank: number;
+  index: number;
+}
+
+export const enum StandardHands {
+  RoyalFlush,
+  StraightFlush,
+  FourOfAKind,
+  FullHouse,
+  Flush,
+  Straight,
+  ThreeOfAKind,
+  TwoPair,
+  Pair,
+  HighCard
+}
+
+export class HandRanking implements HandRankingInterface {
+
+  name: string;
+  rank: number;
+  index: number;
+
+  // static build(handRankingInterface: HandRankingInterface): HandRanking {
+  //   return HandRanking.build(handRankingInterface.name, handRankingInterface.rank, handRankingInterface.index);
+  // }
+
+  static build(rank: {name: string, rank: number, index: number}|HandRankingInterface): HandRanking {
+    let handRanking = new HandRanking();
+    handRanking.name = rank.name;
+    handRanking.rank = rank.rank;
+    handRanking.index = rank.index;
+    return handRanking;
+  }
+
+  static pokerHands: Array<HandRankingInterface> = [
+    {name: "Royal Flush", index: StandardHands.RoyalFlush, rank: 1},
+    {name: "Straight Flush", index: StandardHands.StraightFlush, rank: 2},
+    {name: "Four of a Kind", index: StandardHands.FourOfAKind, rank: 3},
+    {name: "Full House", index: StandardHands.FullHouse, rank: 4},
+    {name: "Flush", index: StandardHands.Flush, rank: 5},
+    {name: "Straight", index: StandardHands.Straight, rank: 6},
+    {name: "Three of a Kind", index: StandardHands.ThreeOfAKind, rank: 7},
+    {name: "Two Pair", index: StandardHands.TwoPair, rank: 8},
+    {name: "Pair", index: StandardHands.Pair, rank: 9},
+    {name: "High Card", index: StandardHands.HighCard, rank: 10}
+  ];
+
+  getHandRanking(handIndex: number): HandRanking {
+    return HandRanking.build(HandRanking.pokerHands.find(function (winningHand: HandRankingInterface): boolean {
+      if (winningHand.index == handIndex) {
+        return true;
+      }
+    }));
+  }
+
+}

@@ -5,7 +5,7 @@ import {WinningHand} from "./WinningHand";
 import {CardSuitEvaluator} from "./CardSuitEvaluator";
 import {CardSorter} from "./CardSorter";
 import {CardRankSequenceEvaluator} from "./CardRankSequenceEvaluator";
-import HandRankings = Rankings.HandRankings;
+import {HandRanking, StandardHands} from "./HandRanking";
 export class Evaluator {
 
   constructor() {
@@ -16,11 +16,11 @@ export class Evaluator {
     let winningHand: WinningHand,
       boundaries = new CardSorter(),
       highestCard = boundaries.highestCard(hand.getCards()),
-      handRanking: HandRankings = new HandRankings(),
-      rank: CardRankEvaluator = new CardRankEvaluator();
+      handRanking: HandRanking = new HandRanking(),
+      rank: CardRankEvaluator = new CardRankEvaluator(handRanking);
 
     // One pair, two pair and three of a kind are the most likely outcomes.
-    winningHand = rank.assess(hand, handRanking);
+    winningHand = rank.assess(hand);
 
     // Typescript cannot test an object to see if it is an instanceof an interface.
     if (typeof winningHand != 'object') {
@@ -34,9 +34,9 @@ export class Evaluator {
       if (typeof winningHand != 'object') {
         // No winning hand, yet, test for a sequence.
         if (isSequence) {
-          winningHand = new WinningHand(hand, handRanking.getHandRanking(Rankings.StandardHands.Straight), Array<Array<Card>>(hand.getCards()));
+          winningHand = new WinningHand(hand, handRanking.getHandRanking(StandardHands.Straight), Array<Array<Card>>(hand.getCards()));
         } else {
-          winningHand = new WinningHand(hand, handRanking.getHandRanking(Rankings.StandardHands.HighCard), Array<Array<Card>>([highestCard]));
+          winningHand = new WinningHand(hand, handRanking.getHandRanking(StandardHands.HighCard), Array<Array<Card>>([highestCard]));
         }
       }
     }

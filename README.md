@@ -13,9 +13,9 @@ evaluate any hand and output its poker rank.
 
 
 ##### Poker Hand References
-[Rules Of Poker Hand Rankings](http://www.cardplayer.com/rules-of-poker/hand-rankings)
-[Poker Hands Order](https://www.pokerstars.com/poker/games/rules/hand-rankings/)
-[List of poker hand categories](https://en.wikipedia.org/wiki/List_of_poker_hand_categories)
+- [Rules Of Poker Hand Rankings](http://www.cardplayer.com/rules-of-poker/hand-rankings)
+- [Poker Hands Order](https://www.pokerstars.com/poker/games/rules/hand-rankings/)
+- [List of poker hand categories](https://en.wikipedia.org/wiki/List_of_poker_hand_categories)
 
 ## Build
 

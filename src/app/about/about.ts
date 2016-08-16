@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component} from "@angular/core";
+import {GameService} from "../GameService";
 
 @Component({
   selector: 'about',
@@ -9,4 +10,8 @@ import {Component} from '@angular/core';
   templateUrl: './about.html'
 })
 export class About {
+
+  constructor(public gameService: GameService) {
+  }
+
 }

@@ -1,20 +1,19 @@
-<h3>Home Component</h3>
+<h3>Poker system</h3>
 
-<button (click)="shuffle()">Deck</button>
-<button (click)="deal()">Deal</button>
-<button (click)="evaluate()">Evaluate</button>
+<button class="btn btn-primary" (click)="shuffle()">Deck</button>
+<button class="btn btn-default" (click)="deal()">Deal</button>
+<button class="btn btn-default" (click)="evaluate()">Evaluate</button>
 
 
-<button (click)="dealEvaluate()">Test</button>
+<button class="btn btn-default" (click)="dealEvaluate()">Test</button>
 <br/>
 
-<button (click)="royalFlush()">Royal Flush</button>
-<button (click)="straightFlush()">Straight Flush</button>
-<button (click)="fourOfAKind()">Four of a Kind</button>
-<button (click)="fullHouse()">Full House</button>
-<button (click)="flush()">Flush</button>
-<button (click)="straight()">Straight</button>
-<button (click)="threeOfAKind()">Three of a Kind</button>
-<button (click)="twoPair()">Two Pair</button>
-<button (click)="pair()">Pair</button>
-<button (click)="highCard()">High Card</button>
+<p>Current hand is: </p>
+
+<ul>
+  <li *ngFor="let card of gameService.dealer.deck.cards">
+    Rank: {{ card.rank.name }}, Suit: {{ card.suit.name }}
+  </li>
+</ul>
+
+

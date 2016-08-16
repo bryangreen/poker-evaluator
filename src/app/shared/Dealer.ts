@@ -5,14 +5,13 @@ import {Card} from "./Card";
 export class Dealer {
 
   cardsPerHand: number = 5;
-  deck: Deck;
+  deck: Deck = new Deck();
 
   constructor() {
 
   }
 
   start() {
-    this.deck = new Deck();
     this.deck.fresh();
   }
 

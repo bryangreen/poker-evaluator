@@ -1,6 +1,5 @@
 var webpack = require('webpack');
 var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // Webpack Config
 var webpackConfig = {
@@ -17,15 +16,17 @@ var webpackConfig = {
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(true),
     new webpack.optimize.CommonsChunkPlugin({name: ['main', 'vendor', 'polyfills'], minChunks: Infinity}),
-    // new HtmlWebpackPlugin(),
   ],
 
   module: {
     loaders: [
       // .ts files for TypeScript
       {test: /\.ts$/, loaders: ['awesome-typescript-loader', 'angular2-template-loader']},
-      {test: /\.css$/, loaders: ['to-string-loader', 'css-loader']},
-      {test: /\.html$/, loader: 'html-loader'}
+      {test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff"},
+      {test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader"},
+      {test: /\.css$/, loaders: ['to-string-loader','css-loader']},
+      {test: /\.html$/, loader: 'raw-loader'}
+
     ]
   }
 };

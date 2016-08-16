@@ -1,6 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
-
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // Webpack Config
 var webpackConfig = {
@@ -17,6 +17,7 @@ var webpackConfig = {
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(true),
     new webpack.optimize.CommonsChunkPlugin({name: ['main', 'vendor', 'polyfills'], minChunks: Infinity}),
+    new HtmlWebpackPlugin(),
   ],
 
   module: {
@@ -24,12 +25,10 @@ var webpackConfig = {
       // .ts files for TypeScript
       {test: /\.ts$/, loaders: ['awesome-typescript-loader', 'angular2-template-loader']},
       {test: /\.css$/, loaders: ['to-string-loader', 'css-loader']},
-      {test: /\.html$/, loader: 'raw-loader'}
+      {test: /\.html$/, loader: 'html-loader'}
     ]
   }
-
 };
-
 
 // Our Webpack Defaults
 var defaultConfig = {

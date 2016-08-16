@@ -8,10 +8,10 @@
     "build": "webpack --inline --colors --progress --display-error-details --display-cached",
     "watch": "npm run build -- --watch",
     "server": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src",
-    "server-debug": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src",
+    "server-debug": "webpack-dev-server --colors --progress --display-error-details --display-cached --port 3000  --content-base src",
     "start": "npm run server",
     "test": "karma start",
-    "devtool": "eval-source-map"
+    "production-build": "set env NODE_ENV=production && webpack -p --progress --colors --display-error-details --display-cached"
   },
   "contributors": [
     "Bryan Green <mail@bryangreen.me>",
@@ -20,10 +20,12 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "angular-cli-ghpages": "^0.1.7",
     "angular2-template-loader": "^0.4.0",
     "awesome-typescript-loader": "^1.1.1",
     "chai": "^3.5.0",
     "css-loader": "^0.23.1",
+    "html-webpack-plugin": "^2.22.0",
     "karma": "^1.2.0",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^1.0.1",

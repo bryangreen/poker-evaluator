@@ -9,12 +9,17 @@
 <br/>
 
 <p>Current hand is: </p>
-
 <ul>
-  <li *ngFor="let card of gameService.dealer.deck.cards">
+  <li *ngFor="let card of gameService.hand.cards">
     Rank: {{ card.rank.name }}, Suit: {{ card.suit.name }}
     <img width=50 src="{{ card.getImageFileName() }}">
   </li>
 </ul>
+
+
+<p>Current deck is: </p>
+<span *ngFor="let card of gameService.dealer.deck.cards">
+    <img width=50 src="{{ card.getImageFileName() }}" alt="{{ card.toString() }}">
+ </span>
 
 

@@ -11,4 +11,8 @@ export class Card {
     return `${this.rank.name} of ${this.suit.name}s`;
   }
 
+  getImageFileName() {
+    return `images/card/${ this.rank.name.toLowerCase() }_of_${this.suit.name.toLowerCase() }s.png`;
+  }
+
 }

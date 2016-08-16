@@ -62,36 +62,36 @@ deployment to GitHub pages easier.
 - Use json files to describe rank, suit, hand rankings. 
 ```json
 [{		
-	name: "Royal Flush",	
-	rank: 1,	
-	formula: {	
-		isSequence: true,
-		isSameSuit: true,
-		sameTwoRank: 0,
-		sameThreeRank: 0,
-		sameFourRank: 0,
-		requiredCard: "Ace",
-		tieBreaker: ""
+	"name": "Royal Flush",	
+	"rank": 1,	
+	"formula": {	
+		"isSequence": true,
+		"isSameSuit": true,
+		"sameTwoRank": 0,
+		"sameThreeRank": 0,
+		"sameFourRank": 0,
+		"requiredCard": "Ace",
+		"tieBreaker": ""
 	}	
-}, …		
+}]
 
 ```
 or a command-driven approach:
 ```json
 {		
-	name: "Royal Flush",	
-	rank: 1,	
-	command: [{	
-		name: "isSequence",
-		value: true
+	"name": "Royal Flush",	
+	"rank": 1,	
+  "commands": [{	
+		"name": "isSequence",
+		"value": true
 	}, {	
-		name: "isSameSuit",
-		value: true
+		"name": "isSameSuit",
+		"value": true
 	}, {	
-		name: "requiredCard",
-		value: "Ace"
+		"name": "requiredCard",
+		"value": "Ace"
 	}]	
-}, …		
+}]
 
 ```
 

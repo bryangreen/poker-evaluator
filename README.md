@@ -55,7 +55,7 @@ coding guidelines:
 https://basarat.gitbooks.io/typescript/content/docs/styleguide/styleguide.html
 Differences include:
 
-## Next Steps/Lessons
+## Next steps and lessons learned
 - Consider building this tool from scratch using the
   [angular-cli](https://github.com/angular/angular-cli). This would at
   least make deployment to GitHub pages easier along with blueprints for creating components, services, classes, etc.

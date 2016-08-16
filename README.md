@@ -20,7 +20,7 @@ From the root directory of this app, run the command:
 npm run-script build
 ```
 
-_Additional npm scripts are described in the package.json file in
+_Additional scripts can be found in the package.json file in
 the project root._
 
 ## Development server

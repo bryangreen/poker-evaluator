@@ -1,0 +1,22 @@
+<h3>Manually add cards</h3>
+
+<button class="btn btn-default" (click)="royalFlush()">Royal Flush</button>
+<button class="btn btn-default" (click)="straightFlush()">Straight Flush</button>
+<button class="btn btn-default" (click)="fourOfAKind()">Four of a Kind</button>
+<button class="btn btn-default" (click)="fullHouse()">Full House</button>
+<button class="btn btn-default" (click)="flush()">Flush</button>
+<button class="btn btn-default" (click)="straight()">Straight</button>
+<button class="btn btn-default" (click)="threeOfAKind()">Three of a Kind</button>
+<button class="btn btn-default" (click)="twoPair()">Two Pair</button>
+<button class="btn btn-default" (click)="pair()">Pair</button>
+<button class="btn btn-default" (click)="highCard()">High Card</button>
+
+<p>Current hand is: </p>
+
+<ul>
+  <li *ngFor="let card of gameService.dealer.deck.cards">
+    Rank: {{ card.rank.name }}, Suit: {{ card.suit.name }}
+  </li>
+</ul>
+
+

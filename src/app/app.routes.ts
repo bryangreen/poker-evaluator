@@ -1,19 +1,11 @@
-import { provideRouter, RouterConfig } from '@angular/router';
-
-import {About} from './about/about';
-import {Home} from './home/home';
+import {provideRouter, RouterConfig} from "@angular/router";
+import {Home} from "./home/home";
+import {Manual} from "./manual/manual";
 
 const routes: RouterConfig = [
-  { path: '', redirectTo: 'home', terminal: true },
-  { path: 'home', component: Home },
-  { path: 'about', component: About }
-  // { path: 'github', component: RepoBrowser, children: [
-  //   { path: ':org', component: RepoList, children: [
-  //     { path: ':repo', component: RepoDetail },
-  //     { path: '', component: RepoDetail }
-  //   ]},
-  //   { path: '', component: RepoList}
-  //  ]}
+  {path: '', redirectTo: 'home', terminal: true},
+  {path: 'home', component: Home},
+  {path: 'manual', component: Manual}
 ];
 
 export const APP_ROUTER_PROVIDERS = [

@@ -28,13 +28,12 @@ export class Deck {
 
 
   private clear() {
-    this.cards = new Array();
+    this.cards = [];
   }
 
   private create() {
     for (let suit of Suit.suits) {
       for (let rank of Rank.ranks) {
-        //console.log(suit.toString(), rank.toString());
         this.cards.push(new Card(Rank.build(rank), Suit.build(suit)));
       }
     }
@@ -47,4 +46,3 @@ export class Deck {
   }
 
 }
-

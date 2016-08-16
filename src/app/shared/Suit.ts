@@ -19,10 +19,6 @@ export class Suit implements SuitInterface {
   color: string;
   index: number;
 
-  // static build(rank: SuitInterface): Suit {
-  //   return Suit.build(rank.name, rank.code, rank.color, rank.index);
-  // }
-
   static build(suit: {name: string, code: string, color: string, index: number}|SuitInterface): Suit {
     let handRanking = new Suit();
     handRanking.name = suit.name;
@@ -53,4 +49,3 @@ export class Suit implements SuitInterface {
   }
 
 }
-

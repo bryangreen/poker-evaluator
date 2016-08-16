@@ -44,7 +44,6 @@ export class CardRankEvaluator {
     }
   }
 
-
   private countGroupings(groupings: Array<Array<Card>>, cardsInGroup: number = 2): number {
     let results = 0;
     for (let majorGrouping in groupings) {

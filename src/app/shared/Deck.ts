@@ -13,31 +13,12 @@ export class Deck {
   }
 
   fresh() {
-    this.clear();
+    this.create();
     this.fill();
     this.shuffle();
   }
 
-  draw(): Card {
-    return this.cards.shift();
-  }
-
-  add(card: Card) {
-    this.cards.unshift(card);
-  }
-
-  satisfyAvailableCards(amount: number) {
-    if (this.cards.length < amount) {
-      // Too few cards in deck.
-      this.fresh();
-    }
-  }
-
-  count(): number {
-    return this.cards.length;
-  }
-
-  clear() {
+  create() {
     this.cards = [];
   }
 
@@ -52,6 +33,25 @@ export class Deck {
   shuffle() {
     if (this.cards.length > 0) {
       this.cards = shuffle(this.cards);
+    }
+  }
+
+  count(): number {
+    return this.cards.length;
+  }
+
+  draw(): Card {
+    return this.cards.shift();
+  }
+
+  add(card: Card) {
+    this.cards.unshift(card);
+  }
+
+  satisfyAvailableCards(amount: number) {
+    if (this.cards.length < amount) {
+      // Too few cards in deck.
+      this.fresh();
     }
   }
 

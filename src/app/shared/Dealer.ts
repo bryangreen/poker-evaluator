@@ -19,10 +19,12 @@ export class Dealer {
   start() {
     this.getGameStore().deck = new Deck();
     this.getGameStore().deck.fresh();
+    this.getGameStore().hand = null;
+    this.getGameStore().winningHand = null;
   }
 
   clear() {
-    this.getGameStore().deck.clear();
+    this.getGameStore().reset();
   }
 
   shuffle() {

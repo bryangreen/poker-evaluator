@@ -12,6 +12,10 @@ export class Hand {
     this.cards.push(card);
   }
 
+  setCards(cards: Array<Card>) {
+    this.cards = cards;
+  }
+
   getCards(): Array<Card> {
     return this.cards;
   }

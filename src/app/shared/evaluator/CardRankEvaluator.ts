@@ -2,11 +2,11 @@ import {Card} from "../Card";
 import {Hand} from "../Hand";
 import {HandReducer} from "./HandReducer";
 import {WinningHand} from "./WinningHand";
-import {HandRanking, StandardHands} from "./HandRanking";
+import {HandRanking, StandardHandRankings} from "./HandRanking";
 
 export class CardRankEvaluator {
 
-  constructor(public rankings: HandRanking) {
+  constructor() {
 
   }
 
@@ -32,15 +32,15 @@ export class CardRankEvaluator {
   private assessPairs(twoCards: number, threeCards: number, fourCards: number): HandRanking {
     switch (true) {
       case (twoCards == 1 && threeCards == 0):
-        return this.rankings.getHandRanking(StandardHands.Pair);
+        return HandRanking.createFromIndex(StandardHandRankings.Pair);
       case (twoCards == 2 && threeCards == 0):
-        return this.rankings.getHandRanking(StandardHands.TwoPair);
+        return HandRanking.createFromIndex(StandardHandRankings.TwoPair);
       case (twoCards == 0 && threeCards == 1):
-        return this.rankings.getHandRanking(StandardHands.ThreeOfAKind);
+        return HandRanking.createFromIndex(StandardHandRankings.ThreeOfAKind);
       case (twoCards == 1 && threeCards == 1):
-        return this.rankings.getHandRanking(StandardHands.FullHouse);
+        return HandRanking.createFromIndex(StandardHandRankings.FullHouse);
       case (fourCards == 1):
-        return this.rankings.getHandRanking(StandardHands.FourOfAKind);
+        return HandRanking.createFromIndex(StandardHandRankings.FourOfAKind);
     }
   }
 

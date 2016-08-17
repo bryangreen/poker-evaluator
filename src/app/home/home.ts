@@ -1,22 +1,28 @@
-import {Component} from "@angular/core";
-import {GameService} from "../GameService";
+import {Component, OnInit} from "@angular/core";
+import {GameStore} from "../services/GameStore";
+import {Dealer} from "../shared/Dealer";
 
 @Component({
   selector: 'home',
   pipes: [],
-  providers: [GameService],
-  directives: [],
+  providers: [],
   styleUrls: ['./home.css'],
   templateUrl: './home.html'
 })
-export class Home {
+export class Home implements OnInit {
 
-  constructor(private gameService: GameService) {
+  dealer: Dealer;
+
+  constructor(public gameStore: GameStore) {
 
   }
 
+  ngOnInit(): any {
+    this.dealer = new Dealer(this.gameStore);
+  }
+
   getDealer() {
-    return this.gameService.dealer;
+    return this.dealer;
   }
 
   deck() {
@@ -24,16 +30,24 @@ export class Home {
   }
 
   evaluate() {
-    this.gameService.dealer.evaluateHand();
+    this.getDealer().evaluateHand();
   }
 
-  hand() {
-    this.gameService.dealer.deal();
+  deal() {
+    this.getDealer().deal();
   }
 
-  newHandEvaluate() {
-    this.hand();
-    this.evaluate();
+  shuffle() {
+    this.getDealer().shuffle();
+  }
+
+  clear() {
+    this.getDealer().clear();
+  }
+
+  dealAndEvaluate() {
+    this.getDealer().deal();
+    this.getDealer().evaluateHand();
   }
 
 }

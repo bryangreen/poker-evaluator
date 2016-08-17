@@ -39,4 +39,19 @@
 
 <footer>
 
+  <div class="container deck">
+    <div class="row">
+      <div class="col-xs-6 col-md-12">
+        <h3>Deck of cards <span class="label label-default" *ngIf="gameStore.deck">{{
+        gameStore.deck.count()
+        }}</span></h3>
+      </div>
+    </div>
+    <div class="row row-centered" *ngIf="gameStore.deck">
+        <span *ngFor="let card of gameStore.deck.cards">
+         <img width=60 src="{{ card.getImageFileName() }}" alt="{{ card.toString() }}" title="{{ card.toString() }}">
+        </span>
+    </div>
+  </div>
+
 </footer>

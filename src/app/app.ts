@@ -1,11 +1,11 @@
 import {Component, OnInit, ViewEncapsulation} from "@angular/core";
 import {ROUTER_DIRECTIVES} from "@angular/router";
-import {GameService} from "./GameService";
+import {GameStore} from "./services/GameStore";
 
 @Component({
   selector: 'app',
   pipes: [],
-  providers: [GameService],
+  providers: [GameStore],
   directives: [ROUTER_DIRECTIVES],
   styleUrls: ['./app.css'],
   encapsulation: ViewEncapsulation.None,
@@ -13,16 +13,16 @@ import {GameService} from "./GameService";
 })
 export class App implements OnInit {
 
-  constructor(private gameService: GameService) {
+  constructor(public gameStore: GameStore) {
 
   }
 
-  getGameService() {
-    return this.gameService;
+  getGameStore() {
+    return this.gameStore;
   }
 
   ngOnInit() {
-    this.getGameService();
+    this.getGameStore();
   }
 
 }

@@ -1,37 +1,43 @@
 import {Deck} from "./Deck";
 import {Hand} from "./Hand";
 import {Card} from "./Card";
+import {Evaluator} from "./evaluator/Evaluator";
+import {GameModel} from "../GameModel";
 
 export class Dealer {
 
   cardsPerHand: number = 5;
-  deck: Deck = new Deck();
 
-  constructor() {
+  constructor(private gameModel: GameModel) {
 
   }
 
   start() {
-    this.deck.fresh();
+    this.gameModel.deck.fresh();
   }
 
-  deal(): Hand {
-    let hand: Hand = new Hand();
+  deal() {
+    let hand: Hand = new Hand(),
+      deck: Deck = this.gameModel.deck;
 
-    if (this.deck.cards.length < this.cardsPerHand) {
-      // Too few cards in deck.
-      this.deck.fresh();
-    }
+    deck.ensureAvailableCards(this.cardsPerHand);
 
     for (let i = 0; i < this.cardsPerHand; i++) {
-      hand.addCard(this.deck.draw());
+      hand.addCard(deck.draw());
     }
 
-    return hand;
+    this.gameModel.hand = hand;
+  }
+
+  evaluateHand() {
+    let evaluator = new Evaluator(),
+      winningHand = evaluator.evaluate(this.gameModel.hand);
+
+    this.gameModel.winningHand = winningHand;
   }
 
   addCard(card: Card) {
-    this.deck.add(card);
+    this.gameModel.deck.add(card);
   }
 
 }

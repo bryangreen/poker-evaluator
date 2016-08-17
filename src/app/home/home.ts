@@ -1,36 +1,34 @@
 import {Component} from "@angular/core";
-import {Evaluator} from "../shared/evaluator/Evaluator";
-import {GameModel} from "../GameModel";
 import {GameService} from "../GameService";
 
 @Component({
   selector: 'home',
   pipes: [],
-  providers: [],
+  providers: [GameService],
   directives: [],
   styleUrls: ['./home.css'],
   templateUrl: './home.html'
 })
 export class Home {
 
-  gameModel: GameModel = new GameModel();
+  constructor(private gameService: GameService) {
 
-  constructor(public gameService: GameService) {
+  }
 
+  getDealer() {
+    return this.gameService.dealer;
   }
 
   deck() {
-    this.gameService.dealer.start();
+    this.getDealer().start();
   }
 
   evaluate() {
-    let evaluator = new Evaluator();
-    this.gameService.winningHand = evaluator.evaluate(this.gameService.hand);
+    this.gameService.dealer.evaluateHand();
   }
 
   hand() {
-    let hand = this.gameService.dealer.deal();
-    this.gameService.hand = hand;
+    this.gameService.dealer.deal();
   }
 
   newHandEvaluate() {

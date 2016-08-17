@@ -6,6 +6,7 @@ import {CardSuitEvaluator} from "./CardSuitEvaluator";
 import {CardSorter} from "./CardSorter";
 import {CardRankSequenceEvaluator} from "./CardRankSequenceEvaluator";
 import {HandRanking, StandardHands} from "./HandRanking";
+
 export class Evaluator {
 
   constructor() {
@@ -41,10 +42,6 @@ export class Evaluator {
           winningHand = new WinningHand(hand, handRanking.getHandRanking(StandardHands.HighCard), Array<Array<Card>>([highestCard]));
         }
       }
-    }
-
-    if (typeof winningHand == 'object') {
-      console.log(`Winning hand was '${winningHand.handRanking.name}' with rank of ${winningHand.handRanking.rank}.`);
     }
 
     return winningHand;

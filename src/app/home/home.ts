@@ -37,7 +37,7 @@ export class Home {
   evaluate() {
     let evaluator = new Evaluator();
 
-    evaluator.evaluate(this.gameService.hand);
+    this.gameService.winningHand = evaluator.evaluate(this.gameService.hand);
   }
 
   dealEvaluate() {

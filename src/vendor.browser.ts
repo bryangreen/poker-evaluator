@@ -1,18 +1,18 @@
 // Vendors
 
-import "reflect-metadata";
-import "zone.js/dist/long-stack-trace-zone.js";
-import "@angular/platform-browser-dynamic";
-import "@angular/platform-browser";
-import "@angular/core";
-import "@angular/http";
-import "@angular/router";
+import 'reflect-metadata';
 
 // NOTE: reference path is temporary workaround (see https://github.com/angular/zone.js/issues/297)
 ///<reference path="../node_modules/zone.js/dist/zone.js.d.ts"/>
 require('zone.js');
+import "zone.js/dist/long-stack-trace-zone.js";
 
 // Angular 2
+import '@angular/platform-browser-dynamic';
+import '@angular/platform-browser';
+import '@angular/core';
+import '@angular/http';
+import '@angular/router';
 
 // RxJS 5
 // import 'rxjs/Rx';

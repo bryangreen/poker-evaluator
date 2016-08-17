@@ -5,8 +5,8 @@ import {Rank} from "./Rank";
 
 export class Deck {
 
-  totalCards: number = 52;
-  cards: Array<Card>;
+  deckSize: number = 52;
+  cards: Array<Card> = [];
 
   constructor() {
 
@@ -14,7 +14,7 @@ export class Deck {
 
   fresh() {
     this.clear();
-    this.create();
+    this.fill();
     this.shuffle();
   }
 
@@ -26,7 +26,7 @@ export class Deck {
     this.cards.unshift(card);
   }
 
-  ensureAvailableCards(amount: number) {
+  satisfyAvailableCards(amount: number) {
     if (this.cards.length < amount) {
       // Too few cards in deck.
       this.fresh();
@@ -34,28 +34,24 @@ export class Deck {
   }
 
   count(): number {
-    if (this.cards !== undefined) {
-      return this.cards.length;
-    } else {
-      return 0;
-    }
+    return this.cards.length;
   }
 
-  private clear() {
+  clear() {
     this.cards = [];
   }
 
-  private shuffle() {
-    if (this.cards.length == this.totalCards) {
-      this.cards = shuffle(this.cards);
-    }
-  }
-
-  private create() {
+  fill() {
     for (let suit of Suit.suits) {
       for (let rank of Rank.ranks) {
         this.cards.push(new Card(Rank.build(rank), Suit.build(suit)));
       }
+    }
+  }
+
+  shuffle() {
+    if (this.cards.length == this.deckSize) {
+      this.cards = shuffle(this.cards);
     }
   }
 

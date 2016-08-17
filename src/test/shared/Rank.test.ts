@@ -3,21 +3,11 @@ import {Card} from "../../app/shared/Card";
 import {StandardRanks, Rank} from "../../app/shared/Rank";
 import {StandardSuits, Suit} from "../../app/shared/Suit";
 
-describe("Card", ()=> {
+describe("Rank", ()=> {
 
   it("should have proper toString", ()=> {
     let card: Card = new Card(Rank.createFromIndex(StandardRanks.Eight), Suit.createFromIndex(StandardSuits.Heart));
     expect("Eight of Hearts").to.eq(card.toString());
-  });
-
-  it("should have a value for the image filename", ()=> {
-    let card: Card = new Card(Rank.createFromIndex(StandardRanks.Eight), Suit.createFromIndex(StandardSuits.Heart));
-    expect(card.getImageFileName()).to.be.not.empty;
-  });
-
-  it("should have a cardcode", ()=> {
-    let card: Card = new Card(Rank.createFromIndex(StandardRanks.Eight), Suit.createFromIndex(StandardSuits.Heart));
-    expect(card.getCardCode()).to.be.not.empty;
   });
 
   it("should return Ten from index", () => {

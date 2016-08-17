@@ -20,7 +20,7 @@ export class Dealer {
     let hand: Hand = new Hand(),
       deck: Deck = this.gameModel.deck;
 
-    deck.ensureAvailableCards(this.cardsPerHand);
+    deck.satisfyAvailableCards(this.cardsPerHand);
 
     for (let i = 0; i < this.cardsPerHand; i++) {
       hand.addCard(deck.draw());

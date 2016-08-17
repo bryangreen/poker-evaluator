@@ -14,18 +14,12 @@ export const enum StandardSuits {
 
 export class Suit implements SuitInterface {
 
-  name: string;
-  code: string;
-  color: string;
-  index: number;
+  constructor(public name: string, public code: string, public color: string, public index: number) {
 
-  static build(suit: {name: string, code: string, color: string, index: number}|SuitInterface): Suit {
-    let handRanking = new Suit();
-    handRanking.name = suit.name;
-    handRanking.code = suit.code;
-    handRanking.color = suit.color;
-    handRanking.index = suit.index;
-    return handRanking;
+  }
+
+  static build(suit: SuitInterface): Suit {
+    return new Suit(suit.name, suit.code, suit.color, suit.index);
   }
 
   static createFromIndex(index: number): Suit {
@@ -45,7 +39,7 @@ export class Suit implements SuitInterface {
   ];
 
   toString(): string {
-    return `${name}`;
+    return `${this.name}`;
   }
 
 }

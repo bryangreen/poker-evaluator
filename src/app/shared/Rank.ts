@@ -23,18 +23,12 @@ export const enum StandardRanks {
 
 export class Rank implements RankInterface {
 
-  name: string;
-  code: string;
-  ranking: number;
-  index: number;
+  constructor(public name: string, public code: string, public ranking: number, public index: number) {
 
-  static build(rank: {name: string, code: string, ranking: number, index: number} | RankInterface): Rank {
-    let handRanking = new Rank();
-    handRanking.name = rank.name;
-    handRanking.code = rank.code;
-    handRanking.ranking = rank.ranking;
-    handRanking.index = rank.index;
-    return handRanking;
+  }
+
+  static build(rank: RankInterface): Rank {
+    return new Rank(rank.name, rank.code, rank.ranking, rank.index);
   }
 
   static createFromIndex(index: number): Rank {
@@ -61,7 +55,7 @@ export class Rank implements RankInterface {
     {name: "Ace", code: "A", ranking: 13, index: StandardRanks.Ace}];
 
   toString(): string {
-    return `${name}`;
+    return `${this.name}`;
   }
 
 }

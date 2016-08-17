@@ -21,6 +21,7 @@ describe('Hand', ()=> {
   it('should have a valid toString', () => {
     let hand: Hand = new Hand(),
       card: Card = new Card(Rank.createFromIndex(StandardRanks.Queen), Suit.createFromIndex(StandardSuits.Club));
+    hand.addCard(card);
     expect(hand.toString()).to.be.eq('Queen of Clubs');
   });
 

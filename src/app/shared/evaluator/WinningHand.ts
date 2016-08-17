@@ -5,7 +5,6 @@ import {HandRanking} from "./HandRanking";
 export class WinningHand {
 
   constructor(public hand: Hand, public handRanking: HandRanking, public winningCards: Array<Array<Card>>) {
-
   }
 
   isWinningCard(card: Card): boolean {
@@ -13,7 +12,6 @@ export class WinningHand {
       if (setOfWinningCards.some((winningCard: Card): boolean =>
           card.getCardCode() == winningCard.getCardCode()
         )) {
-        console.log('winning card = ' + card.getCardCode());
         return true;
       }
     });

@@ -1,13 +1,14 @@
 import {Injectable} from "@angular/core";
 import {Dealer} from "./shared/Dealer";
-import {Hand} from "./shared/Hand";
-import {WinningHand} from "./shared/evaluator/WinningHand";
+import {GameModel} from "./GameModel";
 
 @Injectable()
 export class GameService {
 
-  dealer: Dealer = new Dealer();
-  hand: Hand = new Hand();
-  winningHand: WinningHand;
+  dealer: Dealer;
+
+  constructor() {
+    this.dealer = new Dealer(new GameModel());
+  }
 
 }

@@ -1,4 +1,4 @@
-import {Component} from "@angular/core";
+import {Component, OnInit} from "@angular/core";
 import {ROUTER_DIRECTIVES} from "@angular/router";
 import {GameService} from "./GameService";
 
@@ -9,6 +9,18 @@ import {GameService} from "./GameService";
   directives: [ROUTER_DIRECTIVES],
   templateUrl: './app.html',
 })
-export class App {
+export class App implements OnInit {
+
+  constructor(private gameService: GameService) {
+
+  }
+
+  getGameService() {
+    return this.gameService;
+  }
+
+  ngOnInit() {
+    this.getGameService();
+  }
 
 }

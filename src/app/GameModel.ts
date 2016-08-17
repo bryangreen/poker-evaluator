@@ -1,10 +1,15 @@
+import {Deck} from "./shared/Deck";
 import {Hand} from "./shared/Hand";
-import {Dealer} from "./shared/Dealer";
+import {WinningHand} from "./shared/evaluator/WinningHand";
 
 export class GameModel {
+
+  deck: Deck;
   hand: Hand;
+  winningHand: WinningHand;
 
-  constructor(public  dealer: Dealer = new Dealer()) {
-
+  constructor() {
+    this.deck = new Deck();
+    this.hand = new Hand();
   }
 }

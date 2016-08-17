@@ -26,9 +26,21 @@ export class Deck {
     this.cards.unshift(card);
   }
 
+  ensureAvailableCards(amount: number) {
+    if (this.cards.length < amount) {
+      // Too few cards in deck.
+      this.fresh();
+    }
+  }
 
   private clear() {
     this.cards = [];
+  }
+
+  private shuffle() {
+    if (this.cards.length == this.totalCards) {
+      this.cards = shuffle(this.cards);
+    }
   }
 
   private create() {
@@ -36,12 +48,6 @@ export class Deck {
       for (let rank of Rank.ranks) {
         this.cards.push(new Card(Rank.build(rank), Suit.build(suit)));
       }
-    }
-  }
-
-  private shuffle() {
-    if (this.cards.length == this.totalCards) {
-      this.cards = shuffle(this.cards);
     }
   }
 

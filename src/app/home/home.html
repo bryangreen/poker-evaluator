@@ -9,8 +9,36 @@
 <br/>
 
 <style type="text/css">
-  .winningCard {
-    border : 3px red solid;
+  .hand {
+    display       : inline-block;
+    border-radius : 10px;
+    background    : #eaeaea;
+    padding       : 10px 5px;
+  }
+
+  .hand img {
+    border-radius : 3px;
+    border        : 1px solid dimgrey;
+  }
+
+  .card-text {
+    margin-top : 10px;
+    display    : inline-block;
+  }
+
+  .hand .card-container {
+    display    : inline-block;
+    width      : 140px;
+    text-align : center;
+  }
+
+  .winningCard .card-text {
+    font-weight : 900;
+  }
+
+  .winningCard img {
+    box-shadow : 1px 1px 15px 2px gold;
+    border     : 1px solid darkgoldenrod;
   }
 </style>
 
@@ -18,15 +46,16 @@
 <div *ngIf="gameService.winningHand">
   {{ gameService.winningHand.toString() }}
 </div>
-<ul>
-  <li *ngFor="let card of gameService.hand.cards">
+<div class="hand">
+  <div *ngFor="let card of gameService.hand.cards" class="card-container">
     <span [ngClass]="gameService.winningHand.isWinningCard(card) ? 'winningCard' : ''">
-      Rank: {{ card.rank.name }}, Suit: {{ card.suit.name }}
-      <img width=90 src="{{ card.getImageFileName() }}" alt="{{ card.toString() }}" title="{{ card.toString() }}">
+      <img width=90 src="{{ card.getImageFileName() }}" alt="{{ card.toString() }}" title="{{ card.toString() }}"><br/>
+      <span class="card-text">{{ card.toString() }}</span>
     </span>
-  </li>
-</ul>
-
+  </div>
+</div>
+<br/>
+<br/>
 
 <p>Current deck is: </p>
 <span *ngFor="let card of gameService.dealer.deck.cards">

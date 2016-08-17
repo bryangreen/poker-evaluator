@@ -37,6 +37,14 @@ export class Rank implements RankInterface {
     return handRanking;
   }
 
+  static createFromIndex(index: number): Rank {
+    return Rank.build(Rank.ranks.find(rank => rank.index == index));
+  }
+
+  static createFromCode(code: string): Rank {
+    return Rank.build(Rank.ranks.find(rank => rank.code == code));
+  }
+
   static ranks: Array<RankInterface> = [
     {name: "Two", code: "2", ranking: 1, index: StandardRanks.Two},
     {name: "Three", code: "3", ranking: 2, index: StandardRanks.Three},
@@ -51,14 +59,6 @@ export class Rank implements RankInterface {
     {name: "Queen", code: "Q", ranking: 11, index: StandardRanks.Queen},
     {name: "King", code: "K", ranking: 12, index: StandardRanks.King},
     {name: "Ace", code: "A", ranking: 13, index: StandardRanks.Ace}];
-
-  static createFromIndex(index: number): Rank {
-    return Rank.build(Rank.ranks.find(rank => rank.index == index));
-  }
-
-  static createFromCode(code: string): Rank {
-    return Rank.build(Rank.ranks.find(rank => rank.code == code));
-  }
 
   toString(): string {
     return `${name}`;

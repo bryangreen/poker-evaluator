@@ -9,11 +9,11 @@ import {HandRanking, StandardHands} from "./HandRanking";
 
 export class CardSuitEvaluator {
 
-  constructor() {
+  constructor(public rankings: HandRanking) {
 
   }
 
-  assess(hand: Hand, rankings: HandRanking): WinningHand {
+  assess(hand: Hand): WinningHand {
     let result: Array<Array<Card>> = HandReducer.same(hand, HandReducer.bySuit, 5);
 
     if (result.length > 0) {
@@ -28,14 +28,14 @@ export class CardSuitEvaluator {
 
         if (highestCard.rank.index == StandardRanks.Ace) {
           // Highest card is an Ace in a sequence with all same suit.
-          handRanking = rankings.getHandRanking(StandardHands.RoyalFlush);
+          handRanking = this.rankings.getHandRanking(StandardHands.RoyalFlush);
         } else {
           // Highest card is NOT an Ace but still in a sequence with all same suit.
-          handRanking = rankings.getHandRanking(StandardHands.StraightFlush);
+          handRanking = this.rankings.getHandRanking(StandardHands.StraightFlush);
         }
       } else {
         // Five cards of the same suit but not in a sequence.
-        handRanking = rankings.getHandRanking(StandardHands.Flush);
+        handRanking = this.rankings.getHandRanking(StandardHands.Flush);
       }
 
       return new WinningHand(hand, handRanking, result);

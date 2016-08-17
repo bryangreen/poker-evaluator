@@ -12,12 +12,14 @@ export class Evaluator {
 
   }
 
-  evaluate(hand: Hand) {
+  evaluate(hand: Hand): WinningHand {
     let winningHand: WinningHand,
       boundaries = new CardSorter(),
-      highestCard = boundaries.highestCard(hand.getCards()),
       handRanking: HandRanking = new HandRanking(),
+      highestCard: Card,
       rank: CardRankEvaluator = new CardRankEvaluator(handRanking);
+
+    highestCard = boundaries.highestCard(hand.getCards());
 
     // One pair, two pair and three of a kind are the most likely outcomes.
     winningHand = rank.assess(hand);
@@ -25,11 +27,11 @@ export class Evaluator {
     // Typescript cannot test an object to see if it is an instanceof an interface.
     if (typeof winningHand != 'object') {
       let sequence = new CardRankSequenceEvaluator(),
-        suit: CardSuitEvaluator = new CardSuitEvaluator(),
+        suit: CardSuitEvaluator = new CardSuitEvaluator(handRanking),
         isSequence: boolean = sequence.isRankInSequence(hand);
 
       // Winning hand was not a rank-based win. Test suits.
-      winningHand = suit.assess(hand, handRanking);
+      winningHand = suit.assess(hand);
 
       if (typeof winningHand != 'object') {
         // No winning hand, yet, test for a sequence.
@@ -44,6 +46,8 @@ export class Evaluator {
     if (typeof winningHand == 'object') {
       console.log(`Winning hand was '${winningHand.handRanking.name}' with rank of ${winningHand.handRanking.rank}.`);
     }
+
+    return winningHand;
   }
 
 }

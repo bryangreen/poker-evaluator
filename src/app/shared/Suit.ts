@@ -28,14 +28,6 @@ export class Suit implements SuitInterface {
     return handRanking;
   }
 
-  static suits: Array <SuitInterface> = [
-    {name: "Diamond", code: "D", color: "Red", index: StandardSuits.Diamond},
-    {name: "Heart", code: "H", color: "Red", index: StandardSuits.Heart},
-    {name: "Club", code: "C", color: "Black", index: StandardSuits.Club},
-    {name: "Spade", code: "S", color: "Black", index: StandardSuits.Spade}
-  ];
-
-
   static createFromIndex(index: number): Suit {
     return Suit.build(Suit.suits.find(suit => suit.index == index));
   }
@@ -43,6 +35,14 @@ export class Suit implements SuitInterface {
   static getSuitByCode(code: string): SuitInterface {
     return Suit.build(Suit.suits.find(suit => suit.code == code));
   }
+
+
+  static suits: Array <SuitInterface> = [
+    {name: "Diamond", code: "D", color: "Red", index: StandardSuits.Diamond},
+    {name: "Heart", code: "H", color: "Red", index: StandardSuits.Heart},
+    {name: "Club", code: "C", color: "Black", index: StandardSuits.Club},
+    {name: "Spade", code: "S", color: "Black", index: StandardSuits.Spade}
+  ];
 
   toString(): string {
     return `${name}`;

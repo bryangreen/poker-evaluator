@@ -13,4 +13,10 @@ export class GameStore {
   constructor() {
 
   }
+
+  reset() {
+    this.deck = null;
+    this.hand = null;
+    this.winningHand = null;
+  }
 }

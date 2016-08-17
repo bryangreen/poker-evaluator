@@ -42,7 +42,7 @@ export class Home implements OnInit {
   }
 
   clear() {
-    this.getDealer().clear();
+    this.gameStore.reset();
   }
 
   dealAndEvaluate() {

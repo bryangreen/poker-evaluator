@@ -34,7 +34,7 @@ describe("Deck", ()=> {
 
   it("should have a count of 0, after cleared", ()=> {
     deck.add(new Card(Rank.createFromIndex(StandardRanks.Ace), Suit.createFromIndex(StandardSuits.Spade)));
-    deck.clear();
+    deck.create();
     expect(deck.count()).to.eq(0);
   });
 

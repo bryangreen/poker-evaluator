@@ -1,24 +1,24 @@
-<br/>
 <div class="container">
   <div class="row deck">
     <div class="col-xs-12 col-md-5">
       <!--<h3>Poker hand evaluator</h3>-->
       <div class="panel panel-default ">
-        <div class="panel-heading">Deck of cards</div>
+        <div class="panel-heading">Deck</div>
         <div class="panel-body">
           <button class="btn btn-primary" (click)="deck()">New deck</button>
-          <button class="btn btn-default" (click)="clear()">Clear deck</button>
-          <button class="btn btn-default" (click)="shuffle()">Shuffle deck</button>
+          <button [disabled]="!gameStore.deck" class="btn btn-default" (click)="clear()">Clear deck</button>
+          <button [disabled]="!gameStore.deck" class="btn btn-default" (click)="shuffle()">Shuffle deck</button>
         </div>
       </div>
     </div>
     <div class="col-xs-12 col-md-7">
       <div class="panel panel-default">
-        <div class="panel-heading">Poker hands</div>
+        <div class="panel-heading">Deal</div>
         <div class="panel-body">
-          <button class="btn btn-primary" (click)="dealAndEvaluate()">Deal and evaluate</button>
-          <button class="btn btn-default" (click)="deal()">Just deal a hand</button>
-          <button class="btn btn-default" (click)="evaluate()">Just evaluate a hand</button>
+          <button [disabled]="!gameStore.deck" class="btn btn-primary" (click)="dealAndEvaluate()">Deal and evaluate</button>
+          <button [disabled]="!gameStore.deck" class="btn btn-default" (click)="deal()">Just deal a hand</button>
+          <button [disabled]="!gameStore.deck || !gameStore.hand" class="btn btn-default" (click)="evaluate()">Just evaluate the hand
+          </button>
         </div>
       </div>
     </div>
@@ -45,13 +45,13 @@
             </span>
           </h4>
           <span *ngIf="gameStore.hand">
-          <div *ngFor="let card of gameStore.hand.cards" class="card-container">
+            <div *ngFor="let card of gameStore.hand.cards" class="card-container">
     <span
       [ngClass]="gameStore.winningHand && gameStore.winningHand.isWinningCard(card) ? 'winningCard' : ''">
       <img width=90 src="{{ card.getImageFileName() }}" alt="{{ card.toString() }}" title="{{ card.toString() }}"><br/>
       <span class="card-text">{{ card.toString() }}</span>
     </span>
-          </div>
+            </div>
           </span>
         </div>
 

@@ -1,33 +1,31 @@
 import {expect} from "chai";
-import {Card} from "../../app/shared/Card";
-import {StandardRanks, Rank} from "../../app/shared/Rank";
-import {StandardSuits, Suit} from "../../app/shared/Suit";
+import {Rank, StandardRanks} from "../../app/shared/Rank";
 
 describe("Rank", ()=> {
 
   it("should have proper toString", ()=> {
-    let card: Card = new Card(Rank.createFromIndex(StandardRanks.Eight), Suit.createFromIndex(StandardSuits.Heart));
-    expect("Eight of Hearts").to.eq(card.toString());
+    let rank: Rank = new Rank("One", "1", 1, 0);
+    expect("One").to.eq(rank.toString());
   });
 
-  it("should return Ten from index", () => {
-    let card: Card = new Card(Rank.createFromIndex(StandardRanks.Ten), Suit.createFromIndex(StandardSuits.Heart));
-    expect("Ten").to.eq(card.rank.name);
+  it("should be able to create rank from standard rank", ()=> {
+    let rank: Rank = Rank.createFromIndex(StandardRanks.Two);
+    expect(rank).to.not.be.empty;
   });
 
-  it("should return J from rank code", () => {
-    let card: Card = new Card(Rank.createFromIndex(StandardRanks.Jack), Suit.createFromIndex(StandardSuits.Heart));
-    expect("J").to.eq(card.rank.code);
+  it("should have proper toString from standard rank", ()=> {
+    let rank: Rank = Rank.createFromIndex(StandardRanks.Two);
+    expect("Two").to.eq(rank.toString());
   });
 
-  it("should return Diamond from suit name", () => {
-    let card: Card = new Card(Rank.createFromIndex(StandardRanks.Jack), Suit.createFromIndex(StandardSuits.Diamond));
-    expect("Diamond").to.eq(card.suit.name);
+  it("should have proper toString from create from code", ()=> {
+    let rank: Rank = Rank.createFromCode('2');
+    expect("Two").to.eq(rank.toString());
   });
 
-  it("should return S from suit code", () => {
-    let card: Card = new Card(Rank.createFromIndex(StandardRanks.Jack), Suit.createFromIndex(StandardSuits.Spade));
-    expect("S").to.eq(card.suit.code);
+  it("should be able to build a rank from the ranks", ()=> {
+    let rank: Rank = Rank.build(Rank.ranks[0]);
+    expect(rank.name).to.not.be.empty;
   });
 
 });

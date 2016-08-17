@@ -1,0 +1,56 @@
+/*
+ * @link http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-centered-columns
+ */
+
+/* centered columns styles */
+.row-centered {
+  text-align : center;
+}
+
+.col-centered {
+  display      : inline-block;
+  float        : none;
+  /* reset the text-align */
+  text-align   : left;
+  /* inline-block space fix */
+  margin-right : -4px;
+}
+
+/*
+ *  Poker hands
+ */
+.hand {
+  display       : inline-block;
+  border-radius : 10px;
+  background    : #eaeaea;
+  padding       : 10px 5px;
+}
+
+.hand img {
+  border-radius : 3px;
+  border        : 1px solid dimgrey;
+}
+
+.card-text {
+  margin-top : 10px;
+  display    : inline-block;
+}
+
+.hand .card-container {
+  display    : inline-block;
+  width      : 140px;
+  text-align : center;
+}
+
+.winningCard .card-text {
+  font-weight : 900;
+}
+
+.winningCard img {
+  box-shadow : 1px 1px 15px 2px gold;
+  border     : 1px solid darkgoldenrod;
+}
+
+.deck {
+
+}

@@ -1,4 +1,4 @@
-import {Component, OnInit} from "@angular/core";
+import {Component, OnInit, ViewEncapsulation} from "@angular/core";
 import {ROUTER_DIRECTIVES} from "@angular/router";
 import {GameService} from "./GameService";
 
@@ -7,7 +7,9 @@ import {GameService} from "./GameService";
   pipes: [],
   providers: [GameService],
   directives: [ROUTER_DIRECTIVES],
-  templateUrl: './app.html',
+  styleUrls: ['./app.css'],
+  encapsulation: ViewEncapsulation.None,
+  templateUrl: './app.html'
 })
 export class App implements OnInit {
 

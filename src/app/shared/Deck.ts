@@ -33,6 +33,14 @@ export class Deck {
     }
   }
 
+  count(): number {
+    if (this.cards !== undefined) {
+      return this.cards.length;
+    } else {
+      return 0;
+    }
+  }
+
   private clear() {
     this.cards = [];
   }

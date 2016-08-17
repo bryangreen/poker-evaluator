@@ -1,64 +1,51 @@
-<h3>Poker hand evaluator</h3>
+<div class="container">
+  <div class="row deck">
+    <div class="col-xs-6 col-md-12">
 
-<button class="btn btn-primary" (click)="deck()">New deck</button>
-<!--<button class="btn btn-default" (click)="hand()">Deal hand</button>-->
-<!--<button class="btn btn-default" (click)="evaluate()">Evaluate hand</button>-->
-<button class="btn btn-success" (click)="newHandEvaluate()">Deal hand and evaluate</button>
-<br/>
+      <h3>Poker hand evaluator</h3>
 
-<style type="text/css">
-  .hand {
-    display       : inline-block;
-    border-radius : 10px;
-    background    : #eaeaea;
-    padding       : 10px 5px;
-  }
+      <button class="btn btn-primary" (click)="deck()">New deck</button>
+      <button class="btn btn-success" (click)="newHandEvaluate()">Deal hand and evaluate</button>
+      <br/>
+    </div>
+  </div>
+</div>
 
-  .hand img {
-    border-radius : 3px;
-    border        : 1px solid dimgrey;
-  }
+<br/><br/>
 
-  .card-text {
-    margin-top : 10px;
-    display    : inline-block;
-  }
+<div class="container">
+  <div class="row deck">
+    <div class="col-xs-6 col-md-12">
 
-  .hand .card-container {
-    display    : inline-block;
-    width      : 140px;
-    text-align : center;
-  }
-
-  .winningCard .card-text {
-    font-weight : 900;
-  }
-
-  .winningCard img {
-    box-shadow : 1px 1px 15px 2px gold;
-    border     : 1px solid darkgoldenrod;
-  }
-</style>
-
-<p>Current hand is: </p>
-<div *ngIf="gameService.dealer.gameModel.winningHand">
-  {{ gameService.dealer.gameModel.winningHand.toString() }}
-  <br/>
-  <div class="hand">
-    <div *ngFor="let card of gameService.dealer.gameModel.hand.cards" class="card-container">
+      <h3>Hand</h3>
+      <div *ngIf="gameService.dealer.gameModel.winningHand">
+        {{ gameService.dealer.gameModel.winningHand.toString() }}
+        <br/>
+        <div class="hand">
+          <div *ngFor="let card of gameService.dealer.gameModel.hand.cards" class="card-container">
     <span [ngClass]="gameService.dealer.gameModel.winningHand.isWinningCard(card) ? 'winningCard' : ''">
       <img width=90 src="{{ card.getImageFileName() }}" alt="{{ card.toString() }}" title="{{ card.toString() }}"><br/>
       <span class="card-text">{{ card.toString() }}</span>
     </span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-<br/>
-<br/>
 
-<p>Current deck is: </p>
-<span *ngFor="let card of gameService.dealer.gameModel.deck.cards">
-    <img width=50 src="{{ card.getImageFileName() }}" alt="{{ card.toString() }}" title="{{ card.toString() }}">
- </span>
-
+<div class="container deck">
+  <div class="row">
+    <div class="col-xs-6 col-md-12">
+      <h3>Deck of cards <span class="label label-default">{{
+      gameService.dealer.gameModel.deck.count()
+      }}</span></h3>
+    </div>
+    <div class="row row-centered">
+      <span *ngFor="let card of gameService.dealer.gameModel.deck.cards">
+       <img width=60 src="{{ card.getImageFileName() }}" alt="{{ card.toString() }}" title="{{ card.toString() }}">
+      </span>
+    </div>
+  </div>
+</div>
 

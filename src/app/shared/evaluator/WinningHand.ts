@@ -8,4 +8,19 @@ export class WinningHand {
 
   }
 
+  isWinningCard(card: Card): boolean {
+    return this.winningCards.some((setOfWinningCards: Array<Card>): boolean => {
+      if (setOfWinningCards.some((winningCard: Card): boolean =>
+          card.getCardCode() == winningCard.getCardCode()
+        )) {
+        console.log('winning card = ' + card.getCardCode());
+        return true;
+      }
+    });
+  }
+
+  toString(): string {
+    return `'${this.handRanking.name}' with rank of ${this.handRanking.rank}.`;
+  }
+
 }

@@ -1,4 +1,4 @@
-<h3>Poker system</h3>
+<h3>Poker hand evaluator</h3>
 
 <button class="btn btn-primary" (click)="shuffle()">Deck</button>
 <button class="btn btn-default" (click)="deal()">Deal</button>
@@ -8,11 +8,22 @@
 <button class="btn btn-default" (click)="dealEvaluate()">Test</button>
 <br/>
 
+<style type="text/css">
+  .winningCard {
+    border : 3px red solid;
+  }
+</style>
+
 <p>Current hand is: </p>
+<div *ngIf="gameService.winningHand">
+  {{ gameService.winningHand.toString() }}
+</div>
 <ul>
   <li *ngFor="let card of gameService.hand.cards">
-    Rank: {{ card.rank.name }}, Suit: {{ card.suit.name }}
-    <img width=90 src="{{ card.getImageFileName() }}" alt="{{ card.toString() }}" title="{{ card.toString() }}">
+    <span [ngClass]="gameService.winningHand.isWinningCard(card) ? 'winningCard' : ''">
+      Rank: {{ card.rank.name }}, Suit: {{ card.suit.name }}
+      <img width=90 src="{{ card.getImageFileName() }}" alt="{{ card.toString() }}" title="{{ card.toString() }}">
+    </span>
   </li>
 </ul>
 

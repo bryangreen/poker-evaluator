@@ -50,7 +50,7 @@ export class Deck {
   }
 
   shuffle() {
-    if (this.cards.length == this.deckSize) {
+    if (this.cards.length > 0) {
       this.cards = shuffle(this.cards);
     }
   }

@@ -2,23 +2,36 @@ import {Deck} from "./Deck";
 import {Hand} from "./Hand";
 import {Card} from "./Card";
 import {Evaluator} from "./evaluator/Evaluator";
-import {GameModel} from "../GameModel";
+import {GameStore} from "../services/GameStore";
 
 export class Dealer {
 
   cardsPerHand: number = 5;
 
-  constructor(private gameModel: GameModel) {
+  constructor(private gameStore: GameStore) {
 
   }
 
+  getGameStore(): GameStore {
+    return this.gameStore;
+  }
+
   start() {
-    this.gameModel.deck.fresh();
+    this.getGameStore().deck = new Deck();
+    this.getGameStore().deck.fresh();
+  }
+
+  clear() {
+    this.getGameStore().deck.clear();
+  }
+
+  shuffle() {
+    this.getGameStore().deck.shuffle();
   }
 
   deal() {
     let hand: Hand = new Hand(),
-      deck: Deck = this.gameModel.deck;
+      deck: Deck = this.getGameStore().deck;
 
     deck.satisfyAvailableCards(this.cardsPerHand);
 
@@ -26,18 +39,18 @@ export class Dealer {
       hand.addCard(deck.draw());
     }
 
-    this.gameModel.hand = hand;
+    this.getGameStore().hand = hand;
   }
 
   evaluateHand() {
     let evaluator = new Evaluator(),
-      winningHand = evaluator.evaluate(this.gameModel.hand);
+      winningHand = evaluator.evaluate(this.getGameStore().hand);
 
-    this.gameModel.winningHand = winningHand;
+    this.getGameStore().winningHand = winningHand;
   }
 
   addCard(card: Card) {
-    this.gameModel.deck.add(card);
+    this.getGameStore().deck.add(card);
   }
 
 }

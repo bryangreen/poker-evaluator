@@ -1,6 +1,3 @@
-/**
- * Created by Bryan Green on 8/17/2016.
- */
 import {expect} from "chai";
 import {WinningHand} from "../../../app/shared/evaluator/WinningHand";
 import {Hand} from "../../../app/shared/Hand";

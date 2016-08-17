@@ -18,7 +18,7 @@ export class WinningHand {
   }
 
   toString(): string {
-    return `'${this.handRanking.name}' with rank of ${this.handRanking.rank}.`;
+    return `${this.handRanking.name} (rank of ${this.handRanking.rank})`;
   }
 
 }

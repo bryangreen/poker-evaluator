@@ -5,7 +5,7 @@ import {StandardRanks, Rank} from "../../../app/shared/Rank";
 import {StandardSuits, Suit} from "../../../app/shared/Suit";
 import {HandReducer} from "../../../app/shared/evaluator/HandReducer";
 
-describe('HandReducer', ()=> {
+describe('CardSorter', ()=> {
 
   let hand: Hand = new Hand(),
     card1: Card,

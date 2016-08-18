@@ -22,7 +22,7 @@ describe('Evaluator', ()=> {
 
   });
 
-  it('should find royal flush winning hand', () => {
+  it('should find royal flush ranking', () => {
     card1 = new Card(Rank.createFromIndex(StandardRanks.Ten), Suit.createFromIndex(StandardSuits.Diamond));
     card2 = new Card(Rank.createFromIndex(StandardRanks.Jack), Suit.createFromIndex(StandardSuits.Diamond));
     card3 = new Card(Rank.createFromIndex(StandardRanks.Queen), Suit.createFromIndex(StandardSuits.Diamond));
@@ -36,7 +36,7 @@ describe('Evaluator', ()=> {
   });
 
 
-  it('should find straight flush winning hand', () => {
+  it('should find straight flush ranking', () => {
     card1 = new Card(Rank.createFromIndex(StandardRanks.Two), Suit.createFromIndex(StandardSuits.Heart));
     card2 = new Card(Rank.createFromIndex(StandardRanks.Three), Suit.createFromIndex(StandardSuits.Heart));
     card3 = new Card(Rank.createFromIndex(StandardRanks.Four), Suit.createFromIndex(StandardSuits.Heart));
@@ -62,7 +62,7 @@ describe('Evaluator', ()=> {
     expect(winningHand.handRanking.name).to.be.eq(HandRanking.createFromIndex(StandardHandRankings.FourOfAKind).name);
   });
 
-  it('should find full house winning hand', () => {
+  it('should find full house ranking', () => {
     card1 = new Card(Rank.createFromIndex(StandardRanks.Two), Suit.createFromIndex(StandardSuits.Club));
     card2 = new Card(Rank.createFromIndex(StandardRanks.Two), Suit.createFromIndex(StandardSuits.Heart));
     card3 = new Card(Rank.createFromIndex(StandardRanks.Three), Suit.createFromIndex(StandardSuits.Club));
@@ -75,7 +75,7 @@ describe('Evaluator', ()=> {
     expect(winningHand.handRanking.name).to.be.eq(HandRanking.createFromIndex(StandardHandRankings.FullHouse).name);
   });
 
-  it('should find flush winning hand', () => {
+  it('should find flush ranking', () => {
     card1 = new Card(Rank.createFromIndex(StandardRanks.Two), Suit.createFromIndex(StandardSuits.Club));
     card2 = new Card(Rank.createFromIndex(StandardRanks.Four), Suit.createFromIndex(StandardSuits.Club));
     card3 = new Card(Rank.createFromIndex(StandardRanks.Queen), Suit.createFromIndex(StandardSuits.Club));
@@ -86,6 +86,58 @@ describe('Evaluator', ()=> {
     let evaluator: Evaluator = new Evaluator();
     let winningHand: WinningHand = evaluator.evaluate(hand);
     expect(winningHand.handRanking.name).to.be.eq(HandRanking.createFromIndex(StandardHandRankings.Flush).name);
+  });
+
+  it('should find straight ranking', () => {
+    card1 = new Card(Rank.createFromIndex(StandardRanks.Queen), Suit.createFromIndex(StandardSuits.Club));
+    card2 = new Card(Rank.createFromIndex(StandardRanks.Jack), Suit.createFromIndex(StandardSuits.Heart));
+    card3 = new Card(Rank.createFromIndex(StandardRanks.Eight), Suit.createFromIndex(StandardSuits.Heart));
+    card4 = new Card(Rank.createFromIndex(StandardRanks.Nine), Suit.createFromIndex(StandardSuits.Diamond));
+    card5 = new Card(Rank.createFromIndex(StandardRanks.Ten), Suit.createFromIndex(StandardSuits.Spade));
+    hand.setCards([card1, card2, card3, card4, card5]);
+
+    let evaluator: Evaluator = new Evaluator();
+    let winningHand: WinningHand = evaluator.evaluate(hand);
+    expect(winningHand.handRanking.name).to.be.eq(HandRanking.createFromIndex(StandardHandRankings.Straight).name);
+  });
+
+  it('should find three of a kind ranking', () => {
+    card1 = new Card(Rank.createFromIndex(StandardRanks.Queen), Suit.createFromIndex(StandardSuits.Club));
+    card2 = new Card(Rank.createFromIndex(StandardRanks.Jack), Suit.createFromIndex(StandardSuits.Heart));
+    card3 = new Card(Rank.createFromIndex(StandardRanks.Queen), Suit.createFromIndex(StandardSuits.Heart));
+    card4 = new Card(Rank.createFromIndex(StandardRanks.Nine), Suit.createFromIndex(StandardSuits.Diamond));
+    card5 = new Card(Rank.createFromIndex(StandardRanks.Queen), Suit.createFromIndex(StandardSuits.Spade));
+    hand.setCards([card1, card2, card3, card4, card5]);
+
+    let evaluator: Evaluator = new Evaluator();
+    let winningHand: WinningHand = evaluator.evaluate(hand);
+    expect(winningHand.handRanking.name).to.be.eq(HandRanking.createFromIndex(StandardHandRankings.ThreeOfAKind).name);
+  });
+
+  it('should find two pair ranking', () => {
+    card1 = new Card(Rank.createFromIndex(StandardRanks.Nine), Suit.createFromIndex(StandardSuits.Spade));
+    card2 = new Card(Rank.createFromIndex(StandardRanks.Eight), Suit.createFromIndex(StandardSuits.Heart));
+    card3 = new Card(Rank.createFromIndex(StandardRanks.Queen), Suit.createFromIndex(StandardSuits.Heart));
+    card4 = new Card(Rank.createFromIndex(StandardRanks.Nine), Suit.createFromIndex(StandardSuits.Diamond));
+    card5 = new Card(Rank.createFromIndex(StandardRanks.Eight), Suit.createFromIndex(StandardSuits.Spade));
+    hand.setCards([card1, card2, card3, card4, card5]);
+
+    let evaluator: Evaluator = new Evaluator();
+    let winningHand: WinningHand = evaluator.evaluate(hand);
+    expect(winningHand.handRanking.name).to.be.eq(HandRanking.createFromIndex(StandardHandRankings.TwoPair).name);
+  });
+
+  it('should find high card ranking', () => {
+    card1 = new Card(Rank.createFromIndex(StandardRanks.Nine), Suit.createFromIndex(StandardSuits.Spade));
+    card2 = new Card(Rank.createFromIndex(StandardRanks.Eight), Suit.createFromIndex(StandardSuits.Heart));
+    card3 = new Card(Rank.createFromIndex(StandardRanks.Two), Suit.createFromIndex(StandardSuits.Heart));
+    card4 = new Card(Rank.createFromIndex(StandardRanks.Ace), Suit.createFromIndex(StandardSuits.Diamond));
+    card5 = new Card(Rank.createFromIndex(StandardRanks.Jack), Suit.createFromIndex(StandardSuits.Spade));
+    hand.setCards([card1, card2, card3, card4, card5]);
+
+    let evaluator: Evaluator = new Evaluator();
+    let winningHand: WinningHand = evaluator.evaluate(hand);
+    expect(winningHand.handRanking.name).to.be.eq(HandRanking.createFromIndex(StandardHandRankings.HighCard).name);
   });
 
 });

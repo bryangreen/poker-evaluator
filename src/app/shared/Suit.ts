@@ -26,10 +26,9 @@ export class Suit implements SuitInterface {
     return Suit.build(Suit.suits.find(suit => suit.index == index));
   }
 
-  static getSuitByCode(code: string): SuitInterface {
+  static createFromCode(code: string): Suit {
     return Suit.build(Suit.suits.find(suit => suit.code == code));
   }
-
 
   static suits: Array <SuitInterface> = [
     {name: "Diamond", code: "D", color: "Red", index: StandardSuits.Diamond},

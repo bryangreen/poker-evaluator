@@ -48,6 +48,10 @@ export class Deck {
     this.cards.unshift(card);
   }
 
+  addByCode(rank: string, suit: string) {
+    this.cards.unshift(new Card(Rank.createFromCode(rank), Suit.createFromCode(suit)));
+  }
+
   satisfyAvailableCards(amount: number) {
     if (this.cards.length < amount) {
       // Too few cards in deck.

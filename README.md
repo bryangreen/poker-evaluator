@@ -58,9 +58,10 @@ Important distinctions include:
 - Interfaces use the suffix _Interface_.
 
 ## Next steps and lessons learned
-- Consider building this tool from scratch using the
-  [angular-cli](https://github.com/angular/angular-cli). This would at
-  least make deployment to GitHub pages easier along with blueprints for creating components, services, classes, etc.
+- Consider building from scratch using the
+  [angular-cli](https://github.com/angular/angular-cli) tool. This would at
+  least make deployment to GitHub pages easier along with blueprints for
+  creating components, services, classes, etc.
 - Use json files to describe rank, suit, hand rankings. Here's an
   example describing the _Royal Flush_ hand ranking:
 ```json

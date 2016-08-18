@@ -29,7 +29,7 @@
       <h4>Single cards</h4>
       <span *ngFor="let card of cards">
         <a href="javascript:void(0);" (click)="addCard(card)"><img width=80 src="{{ card.getImageFileName() }}" alt="{{ card.toString() }}"
-                                        title="{{ card.toString() }}"></a>
+                                                                   title="{{ card.toString() }}"></a>
       </span>
     </div>
   </div>

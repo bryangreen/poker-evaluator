@@ -5,9 +5,9 @@
       <div class="panel panel-default ">
         <div class="panel-heading">Deck</div>
         <div class="panel-body">
-          <button class="btn btn-primary" (click)="deck()">New deck</button>
-          <button [disabled]="!gameStore.deck" class="btn btn-default" (click)="clear()">Clear deck</button>
-          <button [disabled]="!gameStore.deck" class="btn btn-default" (click)="shuffle()">Shuffle deck</button>
+          <button id="new-deck" class="btn btn-primary" (click)="deck()">New deck</button>
+          <button id="clear-deck" [disabled]="!gameStore.deck" class="btn btn-default" (click)="clear()">Clear deck</button>
+          <button id="shuffle-deck" [disabled]="!gameStore.deck" class="btn btn-default" (click)="shuffle()">Shuffle deck</button>
         </div>
       </div>
     </div>
@@ -15,9 +15,11 @@
       <div class="panel panel-default">
         <div class="panel-heading">Deal</div>
         <div class="panel-body">
-          <button [disabled]="!gameStore.deck" class="btn btn-primary" (click)="dealAndEvaluate()">Deal and evaluate</button>
-          <button [disabled]="!gameStore.deck" class="btn btn-default" (click)="deal()">Just deal a hand</button>
-          <button [disabled]="!gameStore.deck || !gameStore.hand" class="btn btn-default" (click)="evaluate()">Just evaluate the hand
+          <button id="deal-evaluate" [disabled]="!gameStore.deck" class="btn btn-primary" (click)="dealAndEvaluate()">Deal and
+            evaluate</button>
+          <button id="just-deal" [disabled]="!gameStore.deck" class="btn btn-default" (click)="deal()">Just deal a hand</button>
+          <button id="just-evaluate" [disabled]="!gameStore.deck || !gameStore.hand" class="btn btn-default" (click)="evaluate()">Just
+            evaluate the hand
           </button>
         </div>
       </div>
@@ -32,7 +34,7 @@
       <h3>Hand</h3>
       <div>
         <br/>
-        <div class="hand" style="width:100%;text-align:center;">
+        <div class="hand" id="hand" style="width:100%;text-align:center;">
           <h4 style="text-align: center;font-weight:900;">
             <span *ngIf="!gameStore.deck">
               Welcome! First, please create a new deck.

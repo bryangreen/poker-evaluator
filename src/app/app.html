@@ -12,12 +12,12 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li>
-          <a [routerLink]="['/home']">
+          <a [routerLink]="['/home']" id="home">
             Home
           </a>
         </li>
         <li>
-          <a [routerLink]="['/manual']">
+          <a [routerLink]="['/manual']" id="manual-cards">
             Add cards manually
           </a>
         </li>
@@ -34,12 +34,12 @@
   <div class="container deck">
     <div class="row">
       <div class="col-xs-6 col-md-12">
-        <h3>Deck <span class="label label-default" style="font-size:70%;" *ngIf="gameStore.deck">{{
+        <h3 id="deckHeader">Deck <span id="deck-count" class="label label-default" style="font-size:70%;" *ngIf="gameStore.deck">{{
         gameStore.deck.count()
         }} card{{ gameStore.deck.count() > 1 ? "s" : ""}}</span></h3>
       </div>
     </div>
-    <div class="row row-centered">
+    <div class="row row-centered" id="deckCards">
       <span *ngIf="!gameStore.deck">
         There are no cards in the deck.
       </span>

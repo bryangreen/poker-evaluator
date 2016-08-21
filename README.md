@@ -35,17 +35,35 @@ This will start the
 [webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html)
 and automatically as changes are made to the source files.
 
+Point your browser at [http://localhost:3000](http://localhost:3000)
+
 ## Running tests
 
-From the root directory of this application, run the command:
+### Unit/integration testing
+
+From the root directory of this app, run the command:
 
 ```
 npm run-script test
 ```
 
 The [Karma](https://karma-runner.github.io/1.0/index.html) test runner
-is used in conjuction with the [Mocha](https://mochajs.org/) test
+is used in conjunction with the [Mocha](https://mochajs.org/) test
 framework and [Chai](http://chaijs.com/) assertion library.
+
+### End-to-end testing
+
+From the root directory of this app, run the commands:
+
+```
+npm run-script webdriver-update
+npm run-script webdriver-setup
+npm run-script test-e2e
+```
+
+These tests run using [Protractor](http://www.protractortest.org/) and
+are written with [Mocha](https://mochajs.org/) and
+[Chai](http://chaijs.com/).
 
 
 ## Coding guidelines
@@ -65,7 +83,7 @@ Important distinctions include:
 - Use json files to describe rank, suit, hand rankings. Here's an
   example describing the _Royal Flush_ hand ranking:
 ```json
-[{		
+{		
 	"name": "Royal Flush",	
 	"rank": 1,	
 	"formula": {	
@@ -77,7 +95,7 @@ Important distinctions include:
 		"requiredCard": "Ace",
 		"tieBreaker": ""
 	}	
-}]
+}
 
 ```
 or a command-driven approach:
@@ -95,7 +113,7 @@ or a command-driven approach:
 		"name": "requiredCard",
 		"value": "Ace"
 	}]	
-}]
+}
 
 ```
 

@@ -7,6 +7,13 @@ module.exports = function (config) {
     basePath: '',
     frameworks: ['mocha', 'chai', 'sinon'],
     files: [
+      {pattern: 'node_modules/es6-shim/es6-shim.min.js', included: true, watched: true},
+      {pattern: 'node_modules/reflect-metadata/Reflect.js', included: true, watched: true},
+      {pattern: 'node_modules/zone.js/dist/zone.js', included: true, watched: true},
+      {pattern: 'node_modules/zone.js/dist/async-test.js', included: true, watched: true},
+      {pattern: 'node_modules/rxjs/**/*.js', included: false, watched: false},
+      {pattern: 'node_modules/@angular/**/*.js', included: false, watched: false},
+
       'src/test/*.ts',
       'src/test/**/*.ts'
     ],

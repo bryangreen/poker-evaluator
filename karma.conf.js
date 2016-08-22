@@ -1,4 +1,4 @@
-typing// Referenced: https://templecoding.com/blog/2016/02/02/how-to-setup-testing-using-typescript-mocha-chai-sinon-karma-and-webpack/
+// Referenced: https://templecoding.com/blog/2016/02/02/how-to-setup-testing-using-typescript-mocha-chai-sinon-karma-and-webpack/
 
 var webpackConfig = require('./webpack.config');
 
